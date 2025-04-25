@@ -321,12 +321,36 @@
     </div>
 
     <main>
+        <style>
+            /* Overlay styles */
+            .banner-video-wrapp {
+                position: relative;
+            }
 
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.4);
+                /* semi-transparent black overlay */
+                z-index: 1;
+                /* Ensure overlay stays behind the content */
+            }
+
+            /* Ensure the images appear behind the overlay */
+            .banner-video-wrapp img {
+                position: relative;
+                z-index: 0;
+            }
+        </style>
         <section class="banner banner-video">
             <div class="banner-slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide box-align-left ">
-                        <div class="banner-video-wrapp  ">
+                    <div class="swiper-slide box-align-left">
+                        <div class="banner-video-wrapp">
+                            <div class="overlay"></div>
                             <img src="images/bg1.jpg?width=1903&amp;height=600&amp;rnd=133869361693100000"
                                 alt="Thumbnail-image" width="1903" height="510">
                         </div>
@@ -334,18 +358,16 @@
                             <div class="banner-wrap">
                                 <h1>JOIN THE AFRICA ENERGY INVESTMENT SUMMIT</h1>
                                 <div class="btn-wrap">
-
                                     <div class="btn-primary">
-                                        <a href="#">Book your
-                                            delegate pass</a>
+                                        <a href="#">Book your delegate pass</a>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide box-align-left ">
-                        <div class="banner-video-wrapp  ">
+                    <div class="swiper-slide box-align-left">
+                        <div class="banner-video-wrapp">
+                            <div class="overlay"></div>
                             <img src="images/bg2.jpg?width=1903&amp;height=600&amp;rnd=133875273804470000"
                                 alt="Thumbnail-image" width="1903" height="510">
                         </div>
@@ -357,26 +379,26 @@
                                         <a href="2025-forms/reserve-your-conference-seat-2025/index.htm">Book your
                                             delegate pass</a>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide box-align-left ">
-                        <div class="banner-video-wrapp  ">
+                    <div class="swiper-slide box-align-left">
+                        <div class="banner-video-wrapp">
+                            <div class="overlay"></div>
                             <img src="images/bg3.jpg?rxy=0.44862155388471175,0.4391766303966632&amp;width=1903&amp;height=600&amp;rnd=133880508044530000"
                                 alt="Thumbnail-image" width="1903" height="510">
                         </div>
                         <div class="container-row">
                             <div class="banner-wrap">
-                                <h1>CONNECT WITH ELITE GLOBAL INDUSTRY LEADERS&#xA;</h1>
-
+                                <h1>CONNECT WITH ELITE GLOBAL INDUSTRY LEADERS</h1>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
 
         <section class="statistics gold-bg   without-icon gold-gradient">
 
@@ -3046,7 +3068,7 @@
                             </div>
                         </section>
 
-                        <section class="three-col-cont  four-col-inner">
+                        <section class="three-col-cont four-col-inner">
                             <div class="container-row">
                                 <div class="three-col-heading">
                                     <h2 class="align-center">EVENT OVERVIEW</h2>
@@ -3067,9 +3089,9 @@
                                         <h5 class="single-heading">TECHNICAL WORKSHOPS</h5>
                                         <div class="content">
                                             <h5 class="single-heading">WORKSHOPS</h5>
-                                            <p>200+ global exhibiting companies will come together to showcase their
-                                                latest technologies and innovations driving progress and shaping the
-                                                future of power and water utilities.</p>
+                                            <p>Experience cutting-edge demonstrations from 200+ global exhibitors
+                                                showcasing solutions in renewables, energy efficiency, water systems,
+                                                and smart utility tech shaping Africa's sustainable future.</p>
                                             <div class="btn-secondary">
                                                 <a href="#">Find out more</a>
                                             </div>
@@ -3084,12 +3106,12 @@
                                         <h5 class="single-heading">PLENARY SESSIONS</h5>
                                         <div class="content">
                                             <h5 class="single-heading">PLENARY SESSIONS</h5>
-                                            <p>Hear from government ministers, policymakers and industry leaders on the
-                                                latest market trends and future strategies driving growth and innovation
-                                                across the utilities value chain.</p>
+                                            <p>Join heads of state, ministers, and global CEOs as they unpack policies,
+                                                finance flows, and partnerships driving energy security, access, and
+                                                transition across Africa.</p>
                                             <div class="btn-secondary">
-                                                <a href="conferences/strategic-conference-2025/index.htm#">FIND OUT
-                                                    MORE</a>
+                                                <a href="conferences/strategic-conference-2025/index.htm#">Find out
+                                                    more</a>
                                             </div>
                                         </div>
                                     </div>
@@ -3102,9 +3124,9 @@
                                         <h5 class="single-heading">SPECIAL SESSIONS</h5>
                                         <div class="content">
                                             <h5 class="single-heading">SPECIAL SESSIONS</h5>
-                                            <p>Gain unprecedented access to the latest industry knowledge and research
-                                                findings, technical expertise, new project developments, state of the
-                                                art technologies and industry best practices.</p>
+                                            <p>Explore exclusive sessions focused on project pipelines, regulatory
+                                                reform, and technology adoption. Deep-dive into insights shaping the
+                                                continent’s energy transition and resilience.</p>
                                             <div class="btn-secondary">
                                                 <a href="conferences/technical-conference/index.htm#">Find out more</a>
                                             </div>
@@ -3119,9 +3141,9 @@
                                         <h5 class="single-heading">INDUSTRY AWARDS</h5>
                                         <div class="content">
                                             <h5 class="single-heading">INDUSTRY AWARDS</h5>
-                                            <p>An invitation only VIP club for government officials, policymakers,
-                                                C-level executives, and business leaders offering networking
-                                                opportunities within a relaxed environment.</p>
+                                            <p>Celebrate excellence and innovation at the AEIS Industry Awards —
+                                                recognizing groundbreaking projects, outstanding leadership, and
+                                                transformative impact across the African energy space.</p>
                                             <div class="btn-secondary">
                                                 <a href="features/utilities-club-old/index.htm#">Find out more</a>
                                             </div>
@@ -3130,6 +3152,7 @@
                                 </div>
                             </div>
                         </section>
+
 
 
                         <!-- <section class="logo-slider ">
@@ -3847,19 +3870,22 @@
                 <div class="ad_banner_wrap bg-primary">
                     <div class="ad_banner_left">
                         <h3>Register to Attend the Africa Energy Investment Summit</h3>
-                        <p>Be part of Africa’s most influential energy event — explore the future of power generation, grid innovation, clean mobility, and sustainable infrastructure. Connect with global leaders, investors, and innovators driving real energy transformation.</p>
+                        <p>Be part of Africa’s most influential energy event — explore the future of power generation,
+                            grid innovation, clean mobility, and sustainable infrastructure. Connect with global
+                            leaders, investors, and innovators driving real energy transformation.</p>
                     </div>
                     <div class="ad_banner_right">
                         <div class="btn-wrap">
                             <div class="btn-secondary">
-                                <a href="2025-forms/reserve-your-conference-seat-2025/index.htm">Book Your Delegate Pass</a>
+                                <a href="2025-forms/reserve-your-conference-seat-2025/index.htm">Book Your Delegate
+                                    Pass</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
 
 
 
