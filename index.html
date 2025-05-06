@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Evente - Conference and Event HTML Template</title>
-    <meta name="description" content="Evente - Conference and Event HTML Template">
+    <title>Africa Energy Investment Summit | 25 September 2025</title>
+    <meta name="description" content="Africa Energy Investment Summit | 25 September 2025">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo-white.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -55,16 +55,15 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="td-header-3-top-info">
-                                <span><a href="#"><i class="flaticon-gps"></i>775 Rolling Green Rd, Australia</a></span>
-                                <span class="dvdr">/</span>
-                                <span><a href="#"><i class="flaticon-phone"></i>+1 (1234)-567-800</a></span>
+                                <span><a href="#"><i class="flaticon-gps"></i>UN HOTEL, NEW YORK, USA</a></span>
+
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="d-none d-lg-block">
                                 <div class="td-header-3-top-social d-flex align-items-center justify-content-end">
                                     <span class="td-email"><a href="mailto:info@gmail.com"><i
-                                                class="flaticon-mail"></i>info@gmail.com</a></span>
+                                                class="flaticon-mail"></i>info@brevityanderson.com</a></span>
                                     <span class="dvdr">/</span>
                                     <span><a href="#"><i class="fa-brands fa-facebook"></i></a></span>
                                     <span>
@@ -100,16 +99,46 @@
                                 <nav class="tdmenu__nav tdmenu-3 ml-50 mr-40 d-none d-xl-flex">
                                     <div class="tdmenu__navbar-wrap tdmenu__main-menu">
                                         <ul class="navigation">
-                                            <li class="active"><a href="index.html">Home</a></li>
+                                            <li class=""><a href="#">Home</a></li>
                                             <li><a href="#About">About</a></li>
-                                            <li><a href="#">Agenda</a></li>
-                                            <li><a href="#speakers">Speakers</a></li>
-                                            <li><a href="#contact">Contact</a></li>
+                                            <li><a href="#Agenda">Agenda</a></li>
+                                            <li><a href="#Speakers">Speakers</a></li>
+                                            <li><a href="#Contact">Contact</a></li>
                                         </ul>
                                     </div>
                                 </nav>
                             </div>
                         </div>
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function () {
+                                const navLinks = document.querySelectorAll(".tdmenu__nav .navigation li a");
+
+                                function setActiveFromHash(hash) {
+                                    navLinks.forEach(link => {
+                                        const li = link.parentElement;
+                                        if (link.getAttribute("href") === hash) {
+                                            li.classList.add("active");
+                                        } else {
+                                            li.classList.remove("active");
+                                        }
+                                    });
+                                }
+
+                                // Initial load: set active based on hash (or default to Home)
+                                const initialHash = window.location.hash || "#";
+                                setActiveFromHash(initialHash);
+
+                                // Handle menu clicks
+                                navLinks.forEach(link => {
+                                    link.addEventListener("click", function (e) {
+                                        const hash = this.getAttribute("href");
+                                        setActiveFromHash(hash);
+                                    });
+                                });
+                            });
+                        </script>
+
+
                         <div class="col-xxl-3 col-xl-3 col-6">
                             <div
                                 class="td-menu-right-action td-menu-right-action-3 d-flex align-items-center justify-content-end">
@@ -261,22 +290,32 @@
                     <!-- Slide 1: Main Summit Highlight -->
                     <div class="swiper-slide">
                         <div class="td-hero-3-item">
-                            <div class="td-hero-3-bg bg-position" data-background="assets/img/hero/hero-3/slider.jpg" data-swiper-parallax="1000"></div>
+                            <div class="td-hero-3-bg bg-position" data-background="assets/img/hero/hero-3/slider.jpg"
+                                data-swiper-parallax="1000"></div>
                             <div class="td-hero-3-overlay"></div>
                             <div class="container">
                                 <div class="td-hero-3-spacing">
                                     <div class="row align-items-end">
                                         <div class="col-xl-8 col-lg-10">
                                             <div class="td-hero-3-content mb-40">
-                                                <span class="td-hero-3-subtitle text mb-10 d-inline-block">September 25, 2025 • New York, USA</span>
-                                                <h2 class="td-hero-3-title mb-35 text2">African Energy Investment Summit 2025</h2>
+                                                <span class="td-hero-3-subtitle text mb-10 d-inline-block">September 25,
+                                                    2025 • New York, USA</span>
+                                                <h2 class="td-hero-3-title mb-35 text2">African Energy Investment Summit
+                                                    2025</h2>
                                                 <!-- <p class="text-white mb-30">Join 500+ global leaders shaping the future of sustainable energy</p> -->
-                                                <a class="td-btn td-btn-3-border td-left-right text3" href="register.html">
+                                                <a class="td-btn td-btn-3-border td-left-right text3"
+                                                    href="register.html">
                                                     <span class="mr10 td-text d-inline-block mr-5">Book Pass</span>
                                                     <span class="td-arrow-angle">
-                                                        <svg class="td-arrow-svg-top-right" width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z" fill="white"/>
-                                                            <path d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z" fill="white"/>
+                                                        <svg class="td-arrow-svg-top-right" width="13" height="14"
+                                                            viewBox="0 0 13 14" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
+                                                                fill="white" />
+                                                            <path
+                                                                d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
+                                                                fill="white" />
                                                         </svg>
                                                     </span>
                                                 </a>
@@ -287,27 +326,37 @@
                             </div>
                         </div>
                     </div>
-        
+
                     <!-- Slide 2: Keynote Speakers -->
                     <div class="swiper-slide">
                         <div class="td-hero-3-item">
-                            <div class="td-hero-3-bg bg-position" data-background="assets/img/hero/hero-3/slider-2.jpg" data-swiper-parallax="1000"></div>
+                            <div class="td-hero-3-bg bg-position" data-background="assets/img/hero/hero-3/slider-2.jpg"
+                                data-swiper-parallax="1000"></div>
                             <div class="td-hero-3-overlay"></div>
                             <div class="container">
                                 <div class="td-hero-3-spacing">
                                     <div class="row align-items-end">
                                         <div class="col-xl-8 col-lg-10">
                                             <div class="td-hero-3-content mb-40">
-                                                <span class="td-hero-3-subtitle text mb-10 d-inline-block">Featuring Industry Leaders</span>
-                                                <h2 class="td-hero-3-title mb-35 text2">African Energy Investment Summit 2025</h2>
+                                                <span class="td-hero-3-subtitle text mb-10 d-inline-block">Featuring
+                                                    Industry Leaders</span>
+                                                <h2 class="td-hero-3-title mb-35 text2">African Energy Investment Summit
+                                                    2025</h2>
 
                                                 <!-- <p class="text-white mb-30">Learn from top executives, researchers, and policymakers driving the energy transition</p> -->
-                                                <a class="td-btn text3 td-btn-3-border td-left-right" href="speakers.html">
+                                                <a class="td-btn text3 td-btn-3-border td-left-right"
+                                                    href="speakers.html">
                                                     <span class="mr10 td-text d-inline-block mr-5">View Speakers</span>
                                                     <span class="td-arrow-angle">
-                                                        <svg class="td-arrow-svg-top-right" width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z" fill="white"/>
-                                                            <path d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z" fill="white"/>
+                                                        <svg class="td-arrow-svg-top-right" width="13" height="14"
+                                                            viewBox="0 0 13 14" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
+                                                                fill="white" />
+                                                            <path
+                                                                d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
+                                                                fill="white" />
                                                         </svg>
                                                     </span>
                                                 </a>
@@ -318,27 +367,37 @@
                             </div>
                         </div>
                     </div>
-        
+
                     <!-- Slide 3: Innovation Focus -->
                     <div class="swiper-slide">
                         <div class="td-hero-3-item">
-                            <div class="td-hero-3-bg bg-position" data-background="assets/img/hero/hero-3/slider-3.jpg" data-swiper-parallax="1000"></div>
+                            <div class="td-hero-3-bg bg-position" data-background="assets/img/hero/hero-3/slider-3.jpg"
+                                data-swiper-parallax="1000"></div>
                             <div class="td-hero-3-overlay"></div>
                             <div class="container">
                                 <div class="td-hero-3-spacing">
                                     <div class="row align-items-end">
                                         <div class="col-xl-8 col-lg-10">
                                             <div class="td-hero-3-content mb-40">
-                                                <span class="td-hero-3-subtitle text mb-10 d-inline-block">Cutting-Edge Solutions</span>
-                                                <h2 class="td-hero-3-title mb-35 text2">African Energy Investment Summit 2025</h2>
+                                                <span class="td-hero-3-subtitle text mb-10 d-inline-block">Cutting-Edge
+                                                    Solutions</span>
+                                                <h2 class="td-hero-3-title mb-35 text2">African Energy Investment Summit
+                                                    2025</h2>
 
                                                 <!-- <p class="text-white mb-30">Explore renewable tech, policy frameworks, and investment opportunities</p> -->
-                                                <a class="td-btn text3 td-btn-3-border td-left-right" href="agenda.html">
+                                                <a class="td-btn text3 td-btn-3-border td-left-right"
+                                                    href="agenda.html">
                                                     <span class="mr10 td-text d-inline-block mr-5">View Agenda</span>
                                                     <span class="td-arrow-angle">
-                                                        <svg class="td-arrow-svg-top-right" width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z" fill="white"/>
-                                                            <path d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z" fill="white"/>
+                                                        <svg class="td-arrow-svg-top-right" width="13" height="14"
+                                                            viewBox="0 0 13 14" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
+                                                                fill="white" />
+                                                            <path
+                                                                d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
+                                                                fill="white" />
                                                         </svg>
                                                     </span>
                                                 </a>
@@ -366,8 +425,8 @@
         <div class="td-countdown-area bg-position" data-background="assets/img/feature/special-features.jpg">
             <div class="container">
                 <div class="td-countdown-3-wrap p-relative z-index-1">
-                   
-                   
+
+
 
                     <div class="row align-items-center">
                         <!-- Left Column - Title -->
@@ -498,58 +557,73 @@
 
 
         <!-- td-about-area-start -->
-        <div class="td-about-area pt-140 pb-110">
+        <div class="td-about-area pt-140 pb-110" id="About">
             <div class="container">
-                <div class="row align-items-center">
+                <div class="row align-items-stretch"> <!-- changed from align-items-center to align-items-stretch -->
                     <div class="col-xl-6 col-lg-9 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.3s">
-                        <div class="td-about-3-thumb mr-60 mb-30">
-                            <!-- Replace with energy-related image -->
-                            <img class="w-100" src="assets/img/about/energy-summit.jpg" alt="Advanced Energy Innovation Summit">
+                        <div class="td-about-3-thumb h-100 d-flex align-items-stretch"> <!-- force stretch -->
+                            <img class="img-fit" src="assets/img/speakers/about.jpg"
+                                alt="Advanced Energy Innovation Summit">
                         </div>
                     </div>
+
                     <div class="col-xl-6 col-lg-9 wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.3s">
                         <div class="td-about-3-content-wrap mb-15">
                             <div class="td-about-2-content">
-                                <span class="td-section-subtitle td-section-subtitle-2 td-section-subtitle-3 mb-15">About The Summit</span>
+                                <span
+                                    class="td-section-subtitle td-section-subtitle-2 td-section-subtitle-3 mb-15">About
+                                    The Summit</span>
                                 <h2 class="td-section-title mb-15">Shaping The Future<br> of Energy Innovation</h2>
-                                <p class="para para-2 mb-30">Join 500+ energy professionals, researchers, and policymakers in Chicago for the premier conference on sustainable energy solutions, renewable technologies, and climate policy frameworks.</p>
-                                
+                                <p class="para para-2 mb-30">Join 500+ energy professionals, researchers, and
+                                    policymakers in Chicago for the premier conference on sustainable energy solutions,
+                                    renewable technologies, and climate policy frameworks.</p>
+
                                 <div class="td-about-3-clients d-flex flex-wrap">
                                     <div class="items mb-15">
                                         <span class="mb-10 icon">
-                                            <i class="flaticon-renewable-energy"></i>
+                                            <i class="flaticon-meeting"></i>
                                         </span>
                                         <h5 class="title">30+ Breakthrough<br> Technology Sessions</h5>
                                     </div>
                                     <div class="td-border d-none d-sm-block"></div>
                                     <div class="items mb-15">
                                         <span class="mb-10 icon">
-                                            <i class="flaticon-networking"></i>
+                                            <i class="flaticon-handshake"></i>
                                         </span>
                                         <h5 class="title">Connect with<br> Energy Industry Leaders</h5>
                                     </div>
                                 </div>
-                                
-                                <p class="para mb-40">The Advanced Energy Innovation Summit brings together the brightest minds in clean energy to accelerate the transition to sustainable power systems. Through expert panels, hands-on workshops, and networking opportunities, we're creating actionable solutions for a carbon-neutral future.</p>
+
+                                <p class="para mb-40">The Advanced Energy Innovation Summit brings together the
+                                    brightest minds in clean energy to accelerate the transition to sustainable power
+                                    systems. Through expert panels, hands-on workshops, and networking opportunities,
+                                    we're creating actionable solutions for a carbon-neutral future.</p>
                             </div>
-                            
+
                             <div class="td-about-3-btn d-flex align-items-center">
                                 <a class="td-btn td-btn-3-squre mb-15 td-left-right text3 mr-25" href="register.html">
                                     <span class="mr10 td-text d-inline-block mr-5">Register Now</span>
                                     <span class="td-arrow-angle">
-                                        <svg class="td-arrow-svg-top-right" width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z" fill="white"/>
-                                            <path d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z" fill="white"/>
+                                        <svg class="td-arrow-svg-top-right" width="13" height="14" viewBox="0 0 13 14"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
+                                                fill="white" />
+                                            <path
+                                                d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
+                                                fill="white" />
                                         </svg>
                                     </span>
                                 </a>
                                 <div class="td-about-3-number mb-15 d-flex align-items-center">
                                     <span class="call-icon mr-10">
-                                        <i class="flaticon-email"></i>
+                                        <i class="flaticon-mail"></i>
                                     </span>
                                     <div>
                                         <span class="subtitle">Email Us:</span>
-                                        <h5 class="td-number"><a href="mailto:info@aeisummit.com">info@aeisummit.com</a></h5>
+                                        <h5 class="td-number"><a
+                                                href="mailto:info@aeisummit.com">info@brevityanderson.com</a>
+                                        </h5>
                                     </div>
                                 </div>
                             </div>
@@ -558,10 +632,25 @@
                 </div>
             </div>
         </div>
+        <style>
+            .img-fit {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+                border-radius: 12px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+            }
+        </style>
         <!-- td-about-area-end -->
 
         <!-- td-schedule-area-start -->
-        <div class="td-schedule-area  pt-140 pb-110 bg-position"
+        <style>
+            .img-event {
+                height: 250px;
+            }
+        </style>
+        <div id="Agenda" class="td-schedule-area  pt-140 pb-110 bg-position"
             data-background="assets/img/schedule/schedule-4/bg.jpg">
             <div class="container">
                 <div class="row justify-content-center">
@@ -571,466 +660,147 @@
                             <span class="td-section-subtitle td-section-subtitle-2 td-section-subtitle-3 mb-30">Event
                                 Schedule</span>
                             <h2 class="td-section-title mb-10">Our Events Schedule Plan</h2>
-                            <p class="td-section-text">Like previous year this year we are arranging world marketing
-                                <br>
-                                summit 2025. Its the gathering of all the big
-                            </p>
+
                         </div>
-                        <div class="nav td-schedule-tab-btn td-schedule-3-tab-btn justify-content-center mb-50  wow fadeInUp"
-                            data-wow-duration="1.5s" data-wow-delay="0.5s" id="v-pills-tab" role="tablist"
-                            aria-orientation="vertical">
-                            <button class="nav-link active p-relative" id="v-pills-home1-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-home1" type="button" role="tab" aria-controls="v-pills-home1"
-                                aria-selected="false">
-                                <span class="td-counts">Day-01</span>
-                                Digital Marketing
-                            </button>
-                            <button class="nav-link p-relative" id="v-pills-health-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-health" type="button" role="tab"
-                                aria-controls="v-pills-health " aria-selected="false">
-                                <span class="td-counts">Day-02</span>
-                                Marketing Strategy
-                            </button>
-                            <button class="nav-link p-relative" id="v-pills-life-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-life" type="button" role="tab" aria-controls="v-pills-life"
-                                aria-selected="false">
-                                <span class="td-counts">Day-03</span>
-                                Modern Trend of Marketing
-                            </button>
-                        </div>
+
                     </div>
                 </div>
                 <div class="row">
-                    <div class="tp-contact-form-wrapper tp-black-bg9  tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade active show" id="v-pills-home1" role="tabpanel"
-                            aria-labelledby="v-pills-home1-tab">
-                            <div class="td-schedule-3-wrap mb-30">
-                                <div class="row align-items-center">
-                                    <div class="col-xl-4 col-lg-5">
-                                        <div class="td-schedule-3-thumb p-relative">
-                                            <img class="w-100" src="assets/img/schedule/schedule-3/schedule.jpg" alt="">
-                                            <span class="td-schedule-2-date"><i class="flaticon-calendar"></i> jan 10,
-                                                2025</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-8 col-lg-7">
-                                        <div class="td-schedule-3-content">
-                                            <h2 class="td-schedule-3-title"><a href="contact.html">Innovate 2025 Your
-                                                    Pathway to Business<br>
-                                                    Transformation Energy Save</a></h2>
-                                            <div class="td-schedule-3-destination mb-10">
-                                                <span class="mr-25">
-                                                    <i class="flaticon-gps"></i>
-                                                    Apple Upper West Side, Brooklyn
-                                                </span>
-                                                <span>
-                                                    <i class="flaticon-time"></i>
-                                                    19:15 a.m. – 07:15 a.m.
-                                                </span>
-                                            </div>
-                                            <p class="mb-25 para">when an unknown printer took a galley of type and
-                                                scrambled it to make a type specimen bookIt
-                                                has survived not only five centuries, but also the leap into electronic.
-                                            </p>
-                                            <div class="td-schedule-3-btn d-flex align-items-center flex-wrap">
-                                                <div class="td-schedule-3-user-wrap d-flex align-items-center">
-                                                    <span class="td-schedule-3-user mr-10">
-                                                        <img src="assets/img/schedule/schedule-3/user.jpg" alt="">
-                                                    </span>
-                                                    <div>
-                                                        <h6 class="name">Parker Roben</h6>
-                                                        <span class="position">Author, Cleaner</span>
-                                                    </div>
-                                                </div>
-                                                <span class="dvdr"></span>
-                                                <a class="td-btn td-btn-3-squre td-left-right text3 mr-25"
-                                                    href="contact.html">
-                                                    <span class="mr10 td-text d-inline-block mr-5">Buy Ticket</span>
-                                                    <span class="td-arrow-angle">
-                                                        <svg class="td-arrow-svg-top-right" width="13" height="14"
-                                                            viewBox="0 0 13 14" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
-                                                                fill="white" />
-                                                        </svg>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                    <div class="td-schedule-3-wrap mb-30">
+                        <div class="row align-items-center">
+                            <div class="col-xl-4 col-lg-5">
+                                <div class="td-schedule-3-thumb p-relative">
+                                    <img class="w-100 img-event" src="assets/img/venue/thumb.jpg" alt="">
+                                    <span class="td-schedule-2-date"><i class="flaticon-calendar"></i> Sep 25,
+                                        2025</span>
                                 </div>
                             </div>
-                            <div class="td-schedule-3-wrap mb-30">
-                                <div class="row align-items-center">
-                                    <div class="col-xl-4 col-lg-5">
-                                        <div class="td-schedule-3-thumb p-relative">
-                                            <img class="w-100" src="assets/img/schedule/schedule-3/schedule-2.jpg"
-                                                alt="">
-                                            <span class="td-schedule-2-date"><i class="flaticon-calendar"></i> jan 10,
-                                                2025</span>
-                                        </div>
+                            <div class="col-xl-8 col-lg-7">
+                                <div class="td-schedule-3-content">
+                                    <h2 class="td-schedule-3-title"><a href="contact.html">Innovate 2025 Your
+                                            Pathway to Business<br>
+                                            Transformation Energy Save</a></h2>
+                                    <div class="td-schedule-3-destination mb-10">
+
+                                        <span>
+                                            <i class="flaticon-time"></i>
+                                            19:15 a.m. – 07:15 a.m.
+                                        </span>
                                     </div>
-                                    <div class="col-xl-8 col-lg-7">
-                                        <div class="td-schedule-3-content">
-                                            <h2 class="td-schedule-3-title"><a href="contact.html">Innovate 2022 Your
-                                                    Pathway to Business<br>
-                                                    Transformation Energy Save</a></h2>
-                                            <div class="td-schedule-3-destination mb-10">
-                                                <span class="mr-25">
-                                                    <i class="flaticon-gps"></i>
-                                                    Apple Upper West Side, Brooklyn
-                                                </span>
-                                                <span>
-                                                    <i class="flaticon-time"></i>
-                                                    19:15 a.m. – 07:15 a.m.
-                                                </span>
-                                            </div>
-                                            <p class="mb-25 para">when an unknown printer took a galley of type and
-                                                scrambled it to make a type specimen bookIt
-                                                has survived not only five centuries, but also the leap into electronic.
-                                            </p>
-                                            <div class="td-schedule-3-btn d-flex align-items-center flex-wrap">
-                                                <div class="td-schedule-3-user-wrap d-flex align-items-center">
-                                                    <span class="td-schedule-3-user mr-10">
-                                                        <img src="assets/img/schedule/schedule-3/user-2.jpg" alt="">
-                                                    </span>
-                                                    <div>
-                                                        <h6 class="name">Parker Roben</h6>
-                                                        <span class="position">Author, Cleaner</span>
-                                                    </div>
-                                                </div>
-                                                <span class="dvdr"></span>
-                                                <a class="td-btn td-btn-3-squre td-left-right text3 mr-25"
-                                                    href="contact.html">
-                                                    <span class="mr10 td-text d-inline-block mr-5">Buy Ticket</span>
-                                                    <span class="td-arrow-angle">
-                                                        <svg class="td-arrow-svg-top-right" width="13" height="14"
-                                                            viewBox="0 0 13 14" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
-                                                                fill="white" />
-                                                        </svg>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="td-schedule-3-wrap mb-30">
-                                <div class="row align-items-center">
-                                    <div class="col-xl-4 col-lg-5">
-                                        <div class="td-schedule-3-thumb p-relative">
-                                            <img class="w-100" src="assets/img/schedule/schedule-3/schedule-3.jpg"
-                                                alt="">
-                                            <span class="td-schedule-2-date"><i class="flaticon-calendar"></i> jan 10,
-                                                2025</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-8 col-lg-7">
-                                        <div class="td-schedule-3-content">
-                                            <h2 class="td-schedule-3-title"><a href="contact.html">Innovate 2023 Your
-                                                    Pathway to Business<br>
-                                                    Transformation Energy Save</a></h2>
-                                            <div class="td-schedule-3-destination mb-10">
-                                                <span class="mr-25">
-                                                    <i class="flaticon-gps"></i>
-                                                    Apple Upper West Side, Brooklyn
-                                                </span>
-                                                <span>
-                                                    <i class="flaticon-time"></i>
-                                                    19:15 a.m. – 07:15 a.m.
-                                                </span>
-                                            </div>
-                                            <p class="mb-25 para">when an unknown printer took a galley of type and
-                                                scrambled it to make a type specimen bookIt
-                                                has survived not only five centuries, but also the leap into electronic.
-                                            </p>
-                                            <div class="td-schedule-3-btn d-flex align-items-center flex-wrap">
-                                                <div class="td-schedule-3-user-wrap d-flex align-items-center">
-                                                    <span class="td-schedule-3-user mr-10">
-                                                        <img src="assets/img/schedule/schedule-3/user-3.jpg" alt="">
-                                                    </span>
-                                                    <div>
-                                                        <h6 class="name">Parker Roben</h6>
-                                                        <span class="position">Author, Cleaner</span>
-                                                    </div>
-                                                </div>
-                                                <span class="dvdr"></span>
-                                                <a class="td-btn td-btn-3-squre td-left-right text3 mr-25"
-                                                    href="contact.html">
-                                                    <span class="mr10 td-text d-inline-block mr-5">Buy Ticket</span>
-                                                    <span class="td-arrow-angle">
-                                                        <svg class="td-arrow-svg-top-right" width="13" height="14"
-                                                            viewBox="0 0 13 14" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
-                                                                fill="white" />
-                                                        </svg>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
+                                    <p class="mb-25 para">when an unknown printer took a galley of type and
+                                        scrambled it to make a type specimen bookIt
+                                        has survived not only five centuries, but also the leap into electronic.
+                                    </p>
+                                    <div class="td-schedule-3-btn d-flex align-items-center flex-wrap">
+
+
+                                        <a class="td-btn td-btn-3-squre td-left-right text3 mr-25" href="contact.html">
+                                            <span class="mr10 td-text d-inline-block mr-5">Add to Calendar</span>
+                                            <span class="td-arrow-angle">
+                                                <svg class="td-arrow-svg-top-right" width="13" height="14"
+                                                    viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="v-pills-health" role="tabpanel"
-                            aria-labelledby="v-pills-health-tab">
-                            <div class="td-schedule-3-wrap mb-30">
-                                <div class="row align-items-center">
-                                    <div class="col-xl-4 col-lg-5">
-                                        <div class="td-schedule-3-thumb p-relative">
-                                            <img class="w-100" src="assets/img/schedule/schedule-3/schedule-2.jpg"
-                                                alt="">
-                                            <span class="td-schedule-2-date"><i class="flaticon-calendar"></i>jan 10,
-                                                2025</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-8 col-lg-7">
-                                        <div class="td-schedule-3-content">
-                                            <h2 class="td-schedule-3-title"><a href="contact.html">Innovate 2025 Your
-                                                    Pathway to Business<br>
-                                                    Transformation Energy Save</a></h2>
-                                            <div class="td-schedule-3-destination mb-10">
-                                                <span class="mr-25">
-                                                    <i class="flaticon-gps"></i>
-                                                    Apple Upper West Side, Brooklyn
-                                                </span>
-                                                <span>
-                                                    <i class="flaticon-time"></i>
-                                                    19:15 a.m. – 07:15 a.m.
-                                                </span>
-                                            </div>
-                                            <p class="mb-25 para">when an unknown printer took a galley of type and
-                                                scrambled it to make a type specimen bookIt
-                                                has survived not only five centuries, but also the leap into electronic.
-                                            </p>
-                                            <div class="td-schedule-3-btn d-flex align-items-center flex-wrap">
-                                                <div class="td-schedule-3-user-wrap d-flex align-items-center">
-                                                    <span class="td-schedule-3-user mr-10">
-                                                        <img src="assets/img/schedule/schedule-3/user-2.jpg" alt="">
-                                                    </span>
-                                                    <div>
-                                                        <h6 class="name">Parker Roben</h6>
-                                                        <span class="position">Author, Cleaner</span>
-                                                    </div>
-                                                </div>
-                                                <span class="dvdr"></span>
-                                                <a class="td-btn td-btn-3-squre td-left-right text3 mr-25"
-                                                    href="contact.html">
-                                                    <span class="mr10 td-text d-inline-block mr-5">Buy Ticket</span>
-                                                    <span class="td-arrow-angle">
-                                                        <svg class="td-arrow-svg-top-right" width="13" height="14"
-                                                            viewBox="0 0 13 14" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
-                                                                fill="white" />
-                                                        </svg>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                    </div>
+                    <div class="td-schedule-3-wrap mb-30">
+                        <div class="row align-items-center">
+                            <div class="col-xl-4 col-lg-5">
+                                <div class="td-schedule-3-thumb p-relative">
+                                    <img class="w-100 img-event" src="assets/img/venue/thumb.jpg" alt="">
+                                    <span class="td-schedule-2-date"><i class="flaticon-calendar"></i> Sep 25,
+                                        2025</span>
                                 </div>
                             </div>
-                            <div class="td-schedule-3-wrap mb-30">
-                                <div class="row align-items-center">
-                                    <div class="col-xl-4 col-lg-5">
-                                        <div class="td-schedule-3-thumb p-relative">
-                                            <img class="w-100" src="assets/img/schedule/schedule-3/schedule-3.jpg"
-                                                alt="">
-                                            <span class="td-schedule-2-date"><i class="flaticon-calendar"></i> jan 10,
-                                                2025</span>
-                                        </div>
+                            <div class="col-xl-8 col-lg-7">
+                                <div class="td-schedule-3-content">
+                                    <h2 class="td-schedule-3-title"><a href="contact.html">Innovate 2022 Your
+                                            Pathway to Business<br>
+                                            Transformation Energy Save</a></h2>
+                                    <div class="td-schedule-3-destination mb-10">
+
+                                        <span>
+                                            <i class="flaticon-time"></i>
+                                            19:15 a.m. – 07:15 a.m.
+                                        </span>
                                     </div>
-                                    <div class="col-xl-8 col-lg-7">
-                                        <div class="td-schedule-3-content">
-                                            <h2 class="td-schedule-3-title"><a href="contact.html">Innovate 2022 Your
-                                                    Pathway to Business<br>
-                                                    Transformation Energy Save</a></h2>
-                                            <div class="td-schedule-3-destination mb-10">
-                                                <span class="mr-25">
-                                                    <i class="flaticon-gps"></i>
-                                                    Apple Upper West Side, Brooklyn
-                                                </span>
-                                                <span>
-                                                    <i class="flaticon-time"></i>
-                                                    19:15 a.m. – 07:15 a.m.
-                                                </span>
-                                            </div>
-                                            <p class="mb-25 para">when an unknown printer took a galley of type and
-                                                scrambled it to make a type specimen bookIt
-                                                has survived not only five centuries, but also the leap into electronic.
-                                            </p>
-                                            <div class="td-schedule-3-btn d-flex align-items-center flex-wrap">
-                                                <div class="td-schedule-3-user-wrap d-flex align-items-center">
-                                                    <span class="td-schedule-3-user mr-10">
-                                                        <img src="assets/img/schedule/schedule-3/user-3.jpg" alt="">
-                                                    </span>
-                                                    <div>
-                                                        <h6 class="name">Parker Roben</h6>
-                                                        <span class="position">Author, Cleaner</span>
-                                                    </div>
-                                                </div>
-                                                <span class="dvdr"></span>
-                                                <a class="td-btn td-btn-3-squre td-left-right text3 mr-25"
-                                                    href="contact.html">
-                                                    <span class="mr10 td-text d-inline-block mr-5">Buy Ticket</span>
-                                                    <span class="td-arrow-angle">
-                                                        <svg class="td-arrow-svg-top-right" width="13" height="14"
-                                                            viewBox="0 0 13 14" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
-                                                                fill="white" />
-                                                        </svg>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
+                                    <p class="mb-25 para">when an unknown printer took a galley of type and
+                                        scrambled it to make a type specimen bookIt
+                                        has survived not only five centuries, but also the leap into electronic.
+                                    </p>
+                                    <div class="td-schedule-3-btn d-flex align-items-center flex-wrap">
+
+
+                                        <a class="td-btn td-btn-3-squre td-left-right text3 mr-25" href="contact.html">
+                                            <span class="mr10 td-text d-inline-block mr-5">Add to Calendar</span>
+                                            <span class="td-arrow-angle">
+                                                <svg class="td-arrow-svg-top-right" width="13" height="14"
+                                                    viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="v-pills-life" role="tabpanel" aria-labelledby="v-pills-life-tab">
-                            <div class="td-schedule-3-wrap mb-30">
-                                <div class="row align-items-center">
-                                    <div class="col-xl-4 col-lg-5">
-                                        <div class="td-schedule-3-thumb p-relative">
-                                            <img class="w-100" src="assets/img/schedule/schedule-3/schedule.jpg" alt="">
-                                            <span class="td-schedule-2-date"><i class="flaticon-calendar"></i> jan 10,
-                                                2025</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-8 col-lg-7">
-                                        <div class="td-schedule-3-content">
-                                            <h2 class="td-schedule-3-title"><a href="contact.html">Innovate 2025 Your
-                                                    Pathway to Business<br>
-                                                    Transformation Energy Save</a></h2>
-                                            <div class="td-schedule-3-destination mb-10">
-                                                <span class="mr-25">
-                                                    <i class="flaticon-gps"></i>
-                                                    Apple Upper West Side, Brooklyn
-                                                </span>
-                                                <span>
-                                                    <i class="flaticon-time"></i>
-                                                    19:15 a.m. – 07:15 a.m.
-                                                </span>
-                                            </div>
-                                            <p class="mb-25 para">when an unknown printer took a galley of type and
-                                                scrambled it to make a type specimen bookIt
-                                                has survived not only five centuries, but also the leap into electronic.
-                                            </p>
-                                            <div class="td-schedule-3-btn d-flex align-items-center flex-wrap">
-                                                <div class="td-schedule-3-user-wrap d-flex align-items-center">
-                                                    <span class="td-schedule-3-user mr-10">
-                                                        <img src="assets/img/schedule/schedule-3/user.jpg" alt="">
-                                                    </span>
-                                                    <div>
-                                                        <h6 class="name">Parker Roben</h6>
-                                                        <span class="position">Author, Cleaner</span>
-                                                    </div>
-                                                </div>
-                                                <span class="dvdr"></span>
-                                                <a class="td-btn td-btn-3-squre td-left-right text3 mr-25"
-                                                    href="contact.html">
-                                                    <span class="mr10 td-text d-inline-block mr-5">Buy Ticket</span>
-                                                    <span class="td-arrow-angle">
-                                                        <svg class="td-arrow-svg-top-right" width="13" height="14"
-                                                            viewBox="0 0 13 14" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
-                                                                fill="white" />
-                                                        </svg>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                    </div>
+                    <div class="td-schedule-3-wrap mb-30">
+                        <div class="row align-items-center">
+                            <div class="col-xl-4 col-lg-5">
+                                <div class="td-schedule-3-thumb p-relative">
+                                    <img class="w-100 img-event" src="assets/img/venue/thumb.jpg" alt="">
+                                    <span class="td-schedule-2-date"><i class="flaticon-calendar"></i> Sep 25,
+                                        2025</span>
                                 </div>
                             </div>
-                            <div class="td-schedule-3-wrap mb-30">
-                                <div class="row align-items-center">
-                                    <div class="col-xl-4 col-lg-5">
-                                        <div class="td-schedule-3-thumb p-relative">
-                                            <img class="w-100" src="assets/img/schedule/schedule-3/schedule-2.jpg"
-                                                alt="">
-                                            <span class="td-schedule-2-date"><i class="flaticon-calendar"></i> jan 10,
-                                                2025</span>
-                                        </div>
+                            <div class="col-xl-8 col-lg-7">
+                                <div class="td-schedule-3-content">
+                                    <h2 class="td-schedule-3-title"><a href="contact.html">Innovate 2023 Your
+                                            Pathway to Business<br>
+                                            Transformation Energy Save</a></h2>
+                                    <div class="td-schedule-3-destination mb-10">
+
+                                        <span>
+                                            <i class="flaticon-time"></i>
+                                            19:15 a.m. – 07:15 a.m.
+                                        </span>
                                     </div>
-                                    <div class="col-xl-8 col-lg-7">
-                                        <div class="td-schedule-3-content">
-                                            <h2 class="td-schedule-3-title"><a href="contact.html">Innovate 2021 Your
-                                                    Pathway to Business<br>
-                                                    Transformation Energy Save</a></h2>
-                                            <div class="td-schedule-3-destination mb-10">
-                                                <span class="mr-25">
-                                                    <i class="flaticon-gps"></i>
-                                                    Apple Upper West Side, Brooklyn
-                                                </span>
-                                                <span>
-                                                    <i class="flaticon-time"></i>
-                                                    19:15 a.m. – 07:15 a.m.
-                                                </span>
-                                            </div>
-                                            <p class="mb-25 para">when an unknown printer took a galley of type and
-                                                scrambled it to make a type specimen bookIt
-                                                has survived not only five centuries, but also the leap into electronic.
-                                            </p>
-                                            <div class="td-schedule-3-btn d-flex align-items-center flex-wrap">
-                                                <div class="td-schedule-3-user-wrap d-flex align-items-center">
-                                                    <span class="td-schedule-3-user mr-10">
-                                                        <img src="assets/img/schedule/schedule-3/user-2.jpg" alt="">
-                                                    </span>
-                                                    <div>
-                                                        <h6 class="name">Parker Roben</h6>
-                                                        <span class="position">Author, Cleaner</span>
-                                                    </div>
-                                                </div>
-                                                <span class="dvdr"></span>
-                                                <a class="td-btn td-btn-3-squre td-left-right text3 mr-25"
-                                                    href="contact.html">
-                                                    <span class="mr10 td-text d-inline-block mr-5">Buy Ticket</span>
-                                                    <span class="td-arrow-angle">
-                                                        <svg class="td-arrow-svg-top-right" width="13" height="14"
-                                                            viewBox="0 0 13 14" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
-                                                                fill="white" />
-                                                        </svg>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
+                                    <p class="mb-25 para">when an unknown printer took a galley of type and
+                                        scrambled it to make a type specimen bookIt
+                                        has survived not only five centuries, but also the leap into electronic.
+                                    </p>
+                                    <div class="td-schedule-3-btn d-flex align-items-center flex-wrap">
+
+                                        <a class="td-btn td-btn-3-squre td-left-right text3 mr-25" href="contact.html">
+                                            <span class="mr10 td-text d-inline-block mr-5">Add to Calendar</span>
+                                            <span class="td-arrow-angle">
+                                                <svg class="td-arrow-svg-top-right" width="13" height="14"
+                                                    viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -1041,271 +811,240 @@
         </div>
         <!-- td-schedule-area-end -->
 
-
-        <!-- td-banner-area-start -->
-        <!-- <div class="td-banner-area td-banner-spacing bg-position jarallax"
-            data-background="assets/img/banner/banner.jpg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-7 col-lg-9">
-                        <div class="td-banner-title-wrap  wow fadeInLeft" data-wow-duration="1.5s"
-                            data-wow-delay="0.3s">
-                            <span class="td-section-subtitle mb-20">GET EXPERIENCE</span>
-                            <h2 class="td-section-title mb-15">Get the best experience
-                                in Business Objective</h2>
-                            <p class="mb-35">Like previous year this year we are arranging world marketing <br>
-                                summit 2025. Its the gathering of all the big</p>
-                            <a class="td-btn td-left-right" href="events-details.html">
-                                <span class="mr10 td-text d-inline-block mr-5">See event Details</span>
-                                <span class="td-arrow-angle">
-                                    <svg class="td-arrow-svg-top-right" width="13" height="14" viewBox="0 0 13 14"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
-                                            fill="white" />
-                                        <path
-                                            d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
-                                            fill="white" />
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- td-banner-area-end -->
-
         <!-- td-team-area-start -->
-        <div class="td-team-area pt-140 pb-120 fix p-relative">
+        <div class="td-team-area pt-140 pb-120 fix p-relative" id="Speakers">
             <h2 class="td-team-3-bigtitle td-team-bigtext">SPEAKERS</h2>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xxl-5 col-xl-6 col-lg-7">
-                        <div class="td-schedule-2-title-wrap text-center mb-40 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s">
-                            <span class="td-section-subtitle td-section-subtitle-2 td-section-subtitle-3 mb-25">Industry Thought Leaders</span>
-                            <h2 class="td-section-title">Our Distinguished Speakers</h2>
+                        <div class="td-schedule-2-title-wrap text-center mb-40 wow fadeInUp" data-wow-duration="1.5s"
+                            data-wow-delay="0.3s">
+                            <span class="td-section-subtitle td-section-subtitle-2 td-section-subtitle-3 mb-25">Industry
+                                Thought Leaders</span>
+                            <h2 class="td-section-title">AEIS Speakers</h2>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <!-- Speaker 1 -->
-                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="1.5s"
+                        data-wow-delay="0.2s">
                         <div class="td-speaker-wrap mb-30 text-center">
                             <div class="td-speaker-thumb">
-                                <img class="w-100" src="assets/img/team/team-3/team.jpg" alt="Dr. Sarah Chen">
+                                <img class="w-100"
+                                    src="assets/img/speakers/President-of-Nigeria-GCFR-e1709904952654.jpeg"
+                                    alt="Dr. Sarah Chen">
                                 <div class="td-speaker-overlay">
-                                  
+                                    `
                                 </div>
                             </div>
                             <div class="td-speaker-content">
-                                <h3 class="td-title">Dr. Sarah Chen</h3>
-                                <span class="td-position">Director of Renewable Energy Research<br>National Energy Laboratory</span>
+                                <h3 class="td-title"> H.E. Bola Ahmed Tinubu</h3>
+                                <span class="td-position">President and Commander-in-Chief of the Armed Forces of the
+                                    Federal Republic of Nigeria</span>
                             </div>
                         </div>
                     </div>
-        
-                    <!-- Speaker 2 -->
-                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.3s">
+                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="1.5s"
+                        data-wow-delay="0.2s">
                         <div class="td-speaker-wrap mb-30 text-center">
                             <div class="td-speaker-thumb">
-                                <img class="w-100" src="assets/img/team/team-3/team-2.jpg" alt="Michael Rodriguez">
+                                <img class="w-100" src="assets/img/speakers/vp.jpeg" alt="Dr. Sarah Chen">
                                 <div class="td-speaker-overlay">
-                                    <div class="td-speaker-social">
-                                        
-                                    </div>
+                                    `
                                 </div>
                             </div>
                             <div class="td-speaker-content">
-                                <h3 class="td-title">Michael Rodriguez</h3>
-                                <span class="td-position">CEO<br>Global Energy Solutions</span>
+                                <h3 class="td-title"> H.E. Kashim Shettima</h3>
+                                <span class="td-position">Vice President of the
+                                    Federal Republic of Nigeria</span>
                             </div>
                         </div>
                     </div>
-        
-                    <!-- Speaker 3 -->
-                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.4s">
+                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="1.5s"
+                        data-wow-delay="0.2s">
                         <div class="td-speaker-wrap mb-30 text-center">
                             <div class="td-speaker-thumb">
-                                <img class="w-100" src="assets/img/team/team-3/team-3.jpg" alt="Prof. James Wilson">
+                                <img class="w-100"
+                                    src="assets/img/speakers/Senator-Heineken-Lokpobiri-Ph.D-e1704974099385.jpg"
+                                    alt="Dr. Sarah Chen">
                                 <div class="td-speaker-overlay">
-                                    <div class="td-speaker-social">
-                                       
-                                    </div>
+                                    `
                                 </div>
                             </div>
                             <div class="td-speaker-content">
-                                <h3 class="td-title">Prof. James Wilson</h3>
-                                <span class="td-position">Chair of Sustainable Technology<br>MIT Energy Initiative</span>
+                                <h3 class="td-title"> Sen. Heineken Lokpobiri</h3>
+                                <span class="td-position">Honourable Minister of State
+                                    Petroleum Resources (Oil)</span>
                             </div>
                         </div>
                     </div>
-        
-                    <!-- Speaker 4 -->
-                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="1.5s"
+                        data-wow-delay="0.2s">
                         <div class="td-speaker-wrap mb-30 text-center">
                             <div class="td-speaker-thumb">
-                                <img class="w-100" src="assets/img/team/team-3/team-4.jpg" alt="Lisa Zhang">
+                                <img class="w-100" src="assets/img/speakers/Hon.-Ekperikpe-Ekpo-e1704974318797.jpg"
+                                    alt="Dr. Sarah Chen">
                                 <div class="td-speaker-overlay">
-                                    <div class="td-speaker-social">
-                                        
-                                    </div>
+                                    `
                                 </div>
                             </div>
                             <div class="td-speaker-content">
-                                <h3 class="td-title">Lisa Zhang</h3>
-                                <span class="td-position">VP of Innovation<br>NextGen Power Systems</span>
+                                <h3 class="td-title"> HON. EKPERIKPE EKPO</h3>
+                                <span class="td-position">Honourable Minister of State
+                                    Petroleum Resources (Gas)</span>
                             </div>
                         </div>
                     </div>
-        
-                    <!-- Speaker 5 -->
-                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.6s">
+                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="1.5s"
+                        data-wow-delay="0.2s">
                         <div class="td-speaker-wrap mb-30 text-center">
                             <div class="td-speaker-thumb">
-                                <img class="w-100" src="assets/img/team/team-3/team-5.jpg" alt="David Kim">
+                                <img class="w-100"
+                                    src="assets/img/speakers/Ambassador-Nicholas-Agbo-Ella-1-e1707754434576.jpg"
+                                    alt="Dr. Sarah Chen">
                                 <div class="td-speaker-overlay">
-                                    <div class="td-speaker-social">
-                                       
-                                    </div>
+                                    `
                                 </div>
                             </div>
                             <div class="td-speaker-content">
-                                <h3 class="td-title">David Kim</h3>
-                                <span class="td-position">Senior Policy Advisor<br>Department of Energy</span>
+                                <h3 class="td-title"> Ambassador Nicholas Agbo Ella</h3>
+                                <span class="td-position">Permanent Secretary
+                                    Federal Ministry of Petroleum Resources.</span>
                             </div>
                         </div>
                     </div>
-        
-                    <!-- Speaker 6 -->
-                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.7s">
+                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="1.5s"
+                        data-wow-delay="0.2s">
                         <div class="td-speaker-wrap mb-30 text-center">
                             <div class="td-speaker-thumb">
-                                <img class="w-100" src="assets/img/team/team-3/team-6.jpg" alt="Emma Johnson">
+                                <img class="w-100" src="assets/img/speakers/kyari.jpeg" alt="Dr. Sarah Chen">
                                 <div class="td-speaker-overlay">
-                                    <div class="td-speaker-social">
-                                       
-                                    </div>
+                                    `
                                 </div>
                             </div>
                             <div class="td-speaker-content">
-                                <h3 class="td-title">Emma Johnson</h3>
-                                <span class="td-position">CTO<br>CleanTech Ventures</span>
+                                <h3 class="td-title">MELE KOLO KYARI</h3>
+                                <span class="td-position">Group Managing Director
+                                    NNPC Limited</span>
                             </div>
                         </div>
                     </div>
-        
-                    <!-- Speaker 7 -->
-                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.8s">
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="1.5s"
+                        data-wow-delay="0.2s">
                         <div class="td-speaker-wrap mb-30 text-center">
                             <div class="td-speaker-thumb">
-                                <img class="w-100" src="assets/img/team/team-3/team-7.jpg" alt="Robert Chen">
+                                <img class="w-100" src="assets/img/speakers/HE-Mr.-Haitham-Al-Ghais.png"
+                                    alt="Dr. Sarah Chen">
                                 <div class="td-speaker-overlay">
-                                    <div class="td-speaker-social">
-                                      
-                                    </div>
+                                    `
                                 </div>
                             </div>
                             <div class="td-speaker-content">
-                                <h3 class="td-title">Robert Chen</h3>
-                                <span class="td-position">Director<br>International Renewable Energy Agency</span>
+                                <h3 class="td-title"> Haitham Al Ghais</h3>
+                                <span class="td-position">Secretary General
+                                    OPEC</span>
                             </div>
                         </div>
                     </div>
-        
-                    <!-- Speaker 8 -->
-                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.9s">
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInLeft" data-wow-duration="1.5s"
+                        data-wow-delay="0.2s">
                         <div class="td-speaker-wrap mb-30 text-center">
                             <div class="td-speaker-thumb">
-                                <img class="w-100" src="assets/img/team/team-3/team-8.jpg" alt="Maria Gonzalez">
+                                <img class="w-100"
+                                    src="assets/img/speakers/Mrs.-Olubukola-Arowolo-Verheijen-e1704902520430.jpg"
+                                    alt="Dr. Sarah Chen">
                                 <div class="td-speaker-overlay">
-                                    <div class="td-speaker-social">
-                                        
-                                    </div>
+                                    `
                                 </div>
                             </div>
                             <div class="td-speaker-content">
-                                <h3 class="td-title">Maria Gonzalez</h3>
-                                <span class="td-position">Head of Sustainability<br>Global Energy Consortium</span>
+                                <h3 class="td-title"> Mrs. Olubukola Arowolo Verheijen</h3>
+                                <span class="td-position">Special Adviser to the Nigerian President on Energy</span>
                             </div>
                         </div>
                     </div>
+
+
+
                 </div>
             </div>
         </div>
-        
+
         <style>
             /* Speaker Card Styling */
             .td-speaker-wrap {
                 background: #fff;
                 border-radius: 8px;
                 overflow: hidden;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
                 transition: transform 0.3s ease, box-shadow 0.3s ease;
             }
-            
+
             .td-speaker-wrap:hover {
                 transform: translateY(-5px);
-                box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
             }
-            
+
             .td-speaker-thumb {
                 position: relative;
                 height: 280px;
                 overflow: hidden;
             }
-            
+
             .td-speaker-thumb img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 transition: transform 0.5s ease;
             }
-            
+
             .td-speaker-wrap:hover .td-speaker-thumb img {
                 transform: scale(1.05);
             }
-            
+
             .td-speaker-overlay {
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background: rgba(0,0,0,0.5);
+                background: rgba(0, 0, 0, 0.5);
                 opacity: 0;
                 transition: opacity 0.3s ease;
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
-            
+
             .td-speaker-wrap:hover .td-speaker-overlay {
                 opacity: 1;
             }
-            
+
             .td-speaker-social a {
                 color: #fff;
                 font-size: 18px;
                 margin: 0 10px;
                 transition: color 0.3s ease;
             }
-            
+
             .td-speaker-social a:hover {
                 color: #F248B4;
             }
-            
+
             .td-speaker-content {
                 padding: 25px 20px;
                 text-align: center;
             }
-            
+
             .td-speaker-content .td-title {
                 font-size: 20px;
                 margin-bottom: 5px;
                 color: #222;
             }
-            
+
             .td-speaker-content .td-position {
                 font-size: 14px;
                 color: #666;
@@ -1314,325 +1053,6 @@
         </style>
         <!-- td-team-area-end -->
 
-        <!-- td-pricing-area-start -->
-        <div class="td-pricing-area grey-bg pt-140 pb-110 fix">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6 col-lg-8">
-                        <div class="td-schedule-2-title-wrap text-center mb-40 wow fadeInUp" data-wow-duration="1.5s"
-                            data-wow-delay="0.3s">
-                            <span class="td-section-subtitle td-section-subtitle-2 td-section-subtitle-3  mb-30">Tickets
-                                Packages</span>
-                            <h2 class="td-section-title mb-10">Explore flexible pricing plans</h2>
-                            <p class="td-section-text">Like previous year this year we are arranging world marketing
-                                summit 2025. Its the gathering of all the big</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row gx-30">
-                    <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                        <div class="td-pricing-2-item td-pricing-3-item wow fadeInLeft" data-wow-duration="1.5s"
-                            data-wow-delay="0.3s">
-                            <div class="td-pricing-2-price text-center mb-10">
-                                <span class="subtitle mb-25">Silver Pass</span>
-                                <span class="price">$19.00</span>
-                            </div>
-                            <div class="td-pricing-2-feature mb-45">
-                                <ul>
-                                    <li>
-                                        <span>
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                                                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                        <span>Access to mobile app</span>
-                                    </li>
-                                    <li>
-                                        <span>
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                                                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                        <span>Access to 1000+ talk</span>
-                                    </li>
-                                    <li>
-                                        <span>
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                                                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                        <span>Access to exhibition floor</span>
-                                    </li>
-                                    <li>
-                                        <span>
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                                                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                        <span>Email 24/7 awsupport</span>
-                                    </li>
-                                    <li>
-                                        <span>
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                                                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                        <span>Access to 1000+ talk</span>
-                                    </li>
-                                    <li>
-                                        <span>
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                                                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                        <span>exhibition floor area</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a class="td-btn td-btn-3-squre td-left-right text3" href="contact.html">
-                                <span class="mr10 td-text d-inline-block mr-5">Purchase Now</span>
-                                <span class="td-arrow-angle">
-                                    <svg class="td-arrow-svg-top-right" width="13" height="14" viewBox="0 0 13 14"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
-                                            fill="white" />
-                                        <path
-                                            d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
-                                            fill="white" />
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                        <div class="td-pricing-2-item td-pricing-3-item wow fadeInUp" data-wow-duration="1.5s"
-                            data-wow-delay="0.3s">
-                            <div class="td-pricing-2-price text-center mb-10">
-                                <span class="subtitle mb-25">Golden Pass</span>
-                                <span class="price">$29.00</span>
-                            </div>
-                            <div class="td-pricing-2-feature mb-45">
-                                <ul>
-                                    <li>
-                                        <span>
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                                                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                        <span>Access to mobile app</span>
-                                    </li>
-                                    <li>
-                                        <span>
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                                                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                        <span>Access to 1000+ talk</span>
-                                    </li>
-                                    <li>
-                                        <span>
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                                                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                        <span>Access to exhibition floor</span>
-                                    </li>
-                                    <li>
-                                        <span>
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                                                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                        <span>Email 24/7 awsupport</span>
-                                    </li>
-                                    <li>
-                                        <span>
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                                                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                        <span>Access to 1000+ talk</span>
-                                    </li>
-                                    <li>
-                                        <span>
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                                                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                        <span>exhibition floor area</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a class="td-btn td-btn-3-squre td-left-right text3" href="contact.html">
-                                <span class="mr10 td-text d-inline-block mr-5">Purchase Now</span>
-                                <span class="td-arrow-angle">
-                                    <svg class="td-arrow-svg-top-right" width="13" height="14" viewBox="0 0 13 14"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
-                                            fill="white" />
-                                        <path
-                                            d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
-                                            fill="white" />
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                        <div class="td-pricing-2-item td-pricing-3-item wow fadeInRight" data-wow-duration="1.5s"
-                            data-wow-delay="0.3s">
-                            <div class="td-pricing-2-price text-center mb-10">
-                                <span class="subtitle mb-25">Platinum Pass</span>
-                                <span class="price">$49.00</span>
-                            </div>
-                            <div class="td-pricing-2-feature mb-45">
-                                <ul>
-                                    <li>
-                                        <span>
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                                                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                        <span>Access to mobile app</span>
-                                    </li>
-                                    <li>
-                                        <span>
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                                                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                        <span>Access to 1000+ talk</span>
-                                    </li>
-                                    <li>
-                                        <span>
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                                                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                        <span>Access to exhibition floor</span>
-                                    </li>
-                                    <li>
-                                        <span>
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                                                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                        <span>Email 24/7 awsupport</span>
-                                    </li>
-                                    <li>
-                                        <span>
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                                                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                        <span>Access to 1000+ talk</span>
-                                    </li>
-                                    <li>
-                                        <span>
-                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M20 10.1771V11.0051C19.9989 12.9459 19.3704 14.8344 18.2084 16.3888C17.0463 17.9432 15.413 19.0804 13.5518 19.6307C11.6907 20.1809 9.70153 20.1149 7.88102 19.4423C6.06051 18.7697 4.50619 17.5266 3.44986 15.8985C2.39354 14.2704 1.89181 12.3444 2.01951 10.4078C2.14721 8.47126 2.89749 6.62784 4.15845 5.15252C5.41942 3.67719 7.1235 2.649 9.01657 2.22128C10.9096 1.79357 12.8902 1.98925 14.663 2.77915M20 3.80515L11 12.8141L8.3 10.1141"
-                                                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                        <span>exhibition floor area</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a class="td-btn td-btn-3-squre td-left-right text3" href="contact.html">
-                                <span class="mr10 td-text d-inline-block mr-5">Purchase Now</span>
-                                <span class="td-arrow-angle">
-                                    <svg class="td-arrow-svg-top-right" width="13" height="14" viewBox="0 0 13 14"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
-                                            fill="white" />
-                                        <path
-                                            d="M0.943836 13.5C0.685616 13.5 0.45411 13.4021 0.276027 13.224C0.0979452 13.0459 0 12.8055 0 12.5562C0 12.3068 0.0979452 12.0664 0.276027 11.8884L9.76781 2.38767H2.02123C1.49589 2.38767 1.0774 1.96027 1.0774 1.44384C1.0774 0.927397 1.50479 0.5 2.03014 0.5H12.0562C12.1274 0.5 12.1986 0.508904 12.2788 0.526712L12.4034 0.562329L12.537 0.633562C12.5637 0.65137 12.5993 0.678082 12.626 0.69589C12.6973 0.749315 12.7507 0.80274 12.7952 0.856164C12.8219 0.891781 12.8575 0.927397 12.8842 0.989726L12.9555 1.1411L12.9822 1.22123C13 1.29247 13.0089 1.3726 13.0089 1.44384V11.4699C13.0089 11.9952 12.5815 12.4137 12.0651 12.4137C11.5486 12.4137 11.1212 11.9863 11.1212 11.4699V3.72329L1.62055 13.224C1.44247 13.4021 1.20205 13.5 0.943836 13.5Z"
-                                            fill="white" />
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- td-pricing-area-end -->
-
-     
 
         <!-- td-brands-area-start -->
         <div class="td-brands-area td-brands-2-wrap pt-140 pb-115">
@@ -1643,9 +1063,8 @@
                             data-wow-delay="0.3s">
                             <span
                                 class="td-section-subtitle td-section-subtitle-2 td-section-subtitle-3 mb-20">Sponsors</span>
-                            <h2 class="td-section-title mb-10">Offcial Sponsors & Partners</h2>
-                            <p class="td-section-text">Like previous year this year re arranging world<br>
-                                marketing ummit Its the gathering</p>
+                            <h2 class="td-section-title mb-10">Sponsors & Partners</h2>
+
                         </div>
                     </div>
                 </div>
@@ -1653,63 +1072,71 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 col-6 wow fadeInUp" data-wow-duration="1.5s"
                         data-wow-delay="0.2s">
                         <div class="td-brands-item mb-25">
-                            <a href="#"><img src="assets/img/brands/brands.png" alt=""></a>
+                            <a href="#"><img src="assets/img/sponsors/APPO.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 col-6 wow fadeInUp" data-wow-duration="1.5s"
-                        data-wow-delay="0.3s">
+                        data-wow-delay="0.2s">
                         <div class="td-brands-item mb-25">
-                            <a href="#"><img src="assets/img/brands/brands-2.png" alt=""></a>
+                            <a href="#"><img src="assets/img/sponsors/TotalEnergies_Logo_120x120.jpg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 col-6 wow fadeInUp" data-wow-duration="1.5s"
-                        data-wow-delay="0.4s">
+                        data-wow-delay="0.2s">
                         <div class="td-brands-item mb-25">
-                            <a href="#"><img src="assets/img/brands/brands-3.png" alt=""></a>
+                            <a href="#"><img src="assets/img/sponsors/Exxon-Mobile-logo-300x60.jpg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 col-6 wow fadeInUp" data-wow-duration="1.5s"
-                        data-wow-delay="0.5s">
+                        data-wow-delay="0.2s">
                         <div class="td-brands-item mb-25">
-                            <a href="#"><img src="assets/img/brands/brands-4.png" alt=""></a>
+                            <a href="#"><img src="assets/img/sponsors/NLNG-LOGO-PNG@4x-300x223.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 col-6 wow fadeInUp" data-wow-duration="1.5s"
-                        data-wow-delay="0.6s">
+                        data-wow-delay="0.2s">
                         <div class="td-brands-item mb-25">
-                            <a href="#"><img src="assets/img/brands/brands-5.png" alt=""></a>
+                            <a href="#"><img src="assets/img/sponsors/Shell.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 col-6 wow fadeInUp" data-wow-duration="1.5s"
-                        data-wow-delay="0.7s">
+                        data-wow-delay="0.2s">
                         <div class="td-brands-item mb-25">
-                            <a href="#"><img src="assets/img/brands/brands-6.png" alt=""></a>
+                            <a href="#"><img src="assets/img/sponsors/COLEMAN-LOGO-1-300x73.jpeg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 col-6 wow fadeInUp" data-wow-duration="1.5s"
-                        data-wow-delay="0.8s">
+                        data-wow-delay="0.2s">
                         <div class="td-brands-item mb-25">
-                            <a href="#"><img src="assets/img/brands/brands-7.png" alt=""></a>
+                            <a href="#"><img src="assets/img/sponsors/Suntrust-300x89.jpg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 col-6 wow fadeInUp" data-wow-duration="1.5s"
-                        data-wow-delay="0.9s">
+                        data-wow-delay="0.2s">
                         <div class="td-brands-item mb-25">
-                            <a href="#"><img src="assets/img/brands/brands-8.png" alt=""></a>
+                            <a href="#"><img src="assets/img/sponsors/UBA-300x141.jpg" alt=""></a>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
+        <style>
+            .td-brands-item img {
+                max-height: 60%;
+                max-width: 60%;
+                object-fit: cover;
+            }
+        </style>
         <!-- td-brands-area-end -->
 
-       
+
 
     </main>
     <!-- main-area-end -->
 
     <!-- footer-area-start -->
-    <footer>
+    <footer id="Contact">
         <div class="td-footer-area bg-position pt-130" data-background="assets/img/footer/bg.jpg">
             <div class="container">
                 <div class="row mb-30">
@@ -1719,13 +1146,13 @@
                             <div class="td-footer-logo mb-20">
                                 <a href="index.html"><img src="assets/img/logo/logo-white.png" alt="AEIS Logo"></a>
                             </div>
-                            <p class="text mb-10">McCormick Place Convention Center<br>
-                                2301 S King Dr, Chicago, IL 60616</p>
-                            <a class="number mb-10 d-inline-block" href="tel:+13125551234">+1 (312) 555-1234</a>
-                            <a class="email" href="mailto:info@aeisummit.com">info@aeisummit.com</a>
+                            <p class="text mb-10">
+                                15 Stratton Street, W1J 8LQ United Kingdom</p>
+                            <a class="number mb-10 d-inline-block" href="tel:+13125551234">+44 203 172 0839</a>
+                            <a class="email" href="mailto:info@brevityanderson.com">info@brevityanderson.com</a>
                         </div>
                     </div>
-    
+
                     <!-- Column 2: Quick Links -->
                     <div class="col-lg-5 col-md-7">
                         <div class="td-footer-widget space ml-90 mb-40">
@@ -1756,24 +1183,29 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <!-- Column 3: Newsletter -->
                     <div class="col-lg-4 col-md-6">
                         <div class="td-footer-widget td-footer-subscribe mb-40">
                             <h3 class="td-footer-title mb-20">Energy Insights</h3>
-                            <p class="text mb-0">Subscribe for updates on renewable tech, speaker announcements, and exclusive pre-summit content.</p>
+                            <p class="text mb-0">Subscribe for updates on renewable tech, speaker announcements, and
+                                exclusive pre-summit content.</p>
                             <div class="td-footer-form p-relative">
                                 <input type="text" placeholder="Your Email Address">
                                 <button type="submit" class="td-footer-form-btn">
-                                    <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1.03931 8.9707H19.0393M19.0393 8.9707L12.0393 1.9707M19.0393 8.9707L12.0393 15.9707" stroke="#1E6944" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <svg width="21" height="17" viewBox="0 0 21 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.03931 8.9707H19.0393M19.0393 8.9707L12.0393 1.9707M19.0393 8.9707L12.0393 15.9707"
+                                            stroke="#1E6944" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
                                     </svg>
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Footer Bottom -->
                 <div class="row">
                     <div class="col-12">
@@ -1781,7 +1213,7 @@
                             <div class="row align-items-center">
                                 <div class="col-md-9">
                                     <div class="td-footer-bottom-copyright mb-30">
-                                        <p>Copyright © 2025 African Energy Investment Summit. All rights reserved.</p>
+                                        <p>Copyright © 2025 Brevity Anderson. All rights reserved.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
