@@ -34,11 +34,11 @@
     <!-- Preloader Start -->
     <div class="preloader">
         <div class="loader">
-          <div></div>
-          <div></div>
-          <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-      </div>
+    </div>
     <!-- Preloader End -->
 
     <!-- Scroll-top -->
@@ -95,15 +95,52 @@
                         <div class="col-xxl-9 col-xl-9 col-6">
                             <div class="tdmenu__wrap d-flex align-items-center justify-content-between">
                                 <div class="logo">
-                                    <a class="logo-1 logo-sticky-none" href="index.html"><img data-width="250"
-                                            src="assets/img/logo/logo-white.png" alt="Logo"></a>
+                                    <a class="logo-1 logo-sticky-none" href="#">
+                                        <img class="main-logo" src="assets/img/logo/logo-white.png" alt="Logo">
+                                        <img class="sponsor-logo" src="assets/img/sponsors/APPO.png" alt="">
+                                    </a>
+
                                     <a class="logo-2 d-none" href="index.html"><img data-width="250"
                                             src="assets/img/logo/logo-white.png" alt="Logo"></a>
                                 </div>
+                                <style>
+                                    .logo {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 1rem;
+                                    }
+
+                                    .logo img {
+                                        max-height: 100px;
+                                        width: auto;
+                                        height: auto;
+                                    }
+
+                                    /* Optional: prevent wrapping */
+                                    .logo a {
+                                        display: flex;
+                                        align-items: center;
+                                        flex-wrap: nowrap;
+                                    }
+
+                                    /* Responsive resizing for smaller screens */
+                                    @media (max-width: 768px) {
+                                        .logo img {
+                                            max-height: 60px;
+                                        }
+                                    }
+
+                                    @media (max-width: 480px) {
+                                        .logo img {
+                                            max-height: 50px;
+                                        }
+                                    }
+                                </style>
+
                                 <nav class="tdmenu__nav tdmenu-3 ml-50 mr-40 d-none d-xl-flex">
                                     <div class="tdmenu__navbar-wrap tdmenu__main-menu">
                                         <ul class="navigation">
-                                            <li class=""><a href="#">Home</a></li>
+                                            <li><a href="#Home">Home</a></li>
                                             <li><a href="#About">About</a></li>
                                             <li><a href="#Agenda">Agenda</a></li>
                                             <li><a href="#Speakers">Speakers</a></li>
@@ -116,8 +153,26 @@
                         <script>
                             document.addEventListener("DOMContentLoaded", function () {
                                 const navLinks = document.querySelectorAll(".tdmenu__nav .navigation li a");
-
-                                function setActiveFromHash(hash) {
+                                const sections = [];
+                            
+                                navLinks.forEach(link => {
+                                    const href = link.getAttribute("href");
+                                    if (href.startsWith("#") && href.length > 1) {
+                                        const section = document.querySelector(href);
+                                        if (section) {
+                                            sections.push({
+                                                id: href,
+                                                element: section
+                                            });
+                                        }
+                                    }
+                            
+                                    link.addEventListener("click", function () {
+                                        setActiveLink(href);
+                                    });
+                                });
+                            
+                                function setActiveLink(hash) {
                                     navLinks.forEach(link => {
                                         const li = link.parentElement;
                                         if (link.getAttribute("href") === hash) {
@@ -127,20 +182,32 @@
                                         }
                                     });
                                 }
-
-                                // Initial load: set active based on hash (or default to Home)
-                                const initialHash = window.location.hash || "#";
-                                setActiveFromHash(initialHash);
-
-                                // Handle menu clicks
-                                navLinks.forEach(link => {
-                                    link.addEventListener("click", function (e) {
-                                        const hash = this.getAttribute("href");
-                                        setActiveFromHash(hash);
-                                    });
-                                });
+                            
+                                function onScroll() {
+                                    const scrollPos = window.scrollY + 100; // Offset to trigger slightly earlier
+                            
+                                    for (let i = 0; i < sections.length; i++) {
+                                        const section = sections[i].element;
+                                        const sectionTop = section.offsetTop;
+                                        const sectionHeight = section.offsetHeight;
+                            
+                                        if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                                            setActiveLink(sections[i].id);
+                                            return;
+                                        }
+                                    }
+                                }
+                            
+                                // Initial set
+                                if (window.location.hash) {
+                                    setActiveLink(window.location.hash);
+                                }
+                            
+                                window.addEventListener("scroll", onScroll);
                             });
-                        </script>
+                            </script>
+                            
+                            
 
 
                         <div class="col-xxl-3 col-xl-3 col-6">
@@ -179,7 +246,7 @@
             <nav class="tdmobile__menu-box">
                 <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
                 <div class="nav-logo">
-                    <a href="index.html"><img src="assets/img/logo/logo-black.png" alt="logo"></a>
+                    <a href="index.html"><img src="assets/img/logo/logo-white.png" alt="logo"></a>
                 </div>
                 <div class="tdmobile__search">
                     <form action="#">
@@ -226,7 +293,7 @@
                 <button><i class="fa-sharp fa-regular fa-xmark"></i></button>
             </div>
             <div class="offCanvas__logo mb-30">
-                <a href="index.html"><img src="assets/img/logo/logo-black.png" alt="Logo"></a>
+                <a href="index.html"><img src="assets/img/logo/logo-white.png" alt="Logo"></a>
             </div>
             <div class="offCanvas__side-info mb-30">
                 <div class="contact-list mb-30">
@@ -288,7 +355,7 @@
             }
         </style>
         <!-- hero-area-start -->
-        <div class="td-hero-area fix p-relative">
+        <div class="td-hero-area fix p-relative" id="Home">
             <div class="swiper-container td-hero-3-zoom">
                 <div class="swiper-wrapper p-relative">
                     <!-- Slide 1: Main Summit Highlight -->
@@ -304,11 +371,10 @@
                                             <div class="td-hero-3-content mb-40">
                                                 <span class="td-hero-3-subtitle text mb-10 d-inline-block">September 25,
                                                     2025 • New York, USA</span>
-                                                <h2 class="td-hero-3-title mb-35 text2">African Energy Investment Summit
+                                                <h2 class="td-hero-3-title mb-35 text2">Africa Energy Investment Summit
                                                     2025</h2>
                                                 <!-- <p class="text-white mb-30">Join 500+ global leaders shaping the future of sustainable energy</p> -->
-                                                <a class="td-btn td-btn-3-border td-left-right text3"
-                                                    href="register.html">
+                                                <a class="td-btn td-btn-3-border td-left-right text3" href="#">
                                                     <span class="mr10 td-text d-inline-block mr-5">Book Pass</span>
                                                     <span class="td-arrow-angle">
                                                         <svg class="td-arrow-svg-top-right" width="13" height="14"
@@ -344,12 +410,11 @@
                                             <div class="td-hero-3-content mb-40">
                                                 <span class="td-hero-3-subtitle text mb-10 d-inline-block">Featuring
                                                     Industry Leaders</span>
-                                                <h2 class="td-hero-3-title mb-35 text2">African Energy Investment Summit
+                                                <h2 class="td-hero-3-title mb-35 text2">Africa Energy Investment Summit
                                                     2025</h2>
 
                                                 <!-- <p class="text-white mb-30">Learn from top executives, researchers, and policymakers driving the energy transition</p> -->
-                                                <a class="td-btn text3 td-btn-3-border td-left-right"
-                                                    href="speakers.html">
+                                                <a class="td-btn text3 td-btn-3-border td-left-right" href="#Speakers">
                                                     <span class="mr10 td-text d-inline-block mr-5">View Speakers</span>
                                                     <span class="td-arrow-angle">
                                                         <svg class="td-arrow-svg-top-right" width="13" height="14"
@@ -385,12 +450,11 @@
                                             <div class="td-hero-3-content mb-40">
                                                 <span class="td-hero-3-subtitle text mb-10 d-inline-block">Cutting-Edge
                                                     Solutions</span>
-                                                <h2 class="td-hero-3-title mb-35 text2">African Energy Investment Summit
+                                                <h2 class="td-hero-3-title mb-35 text2">Africa Energy Investment Summit
                                                     2025</h2>
 
                                                 <!-- <p class="text-white mb-30">Explore renewable tech, policy frameworks, and investment opportunities</p> -->
-                                                <a class="td-btn text3 td-btn-3-border td-left-right"
-                                                    href="agenda.html">
+                                                <a class="td-btn text3 td-btn-3-border td-left-right" href="#Agenda">
                                                     <span class="mr10 td-text d-inline-block mr-5">View Agenda</span>
                                                     <span class="td-arrow-angle">
                                                         <svg class="td-arrow-svg-top-right" width="13" height="14"
@@ -654,7 +718,7 @@
                 height: 250px;
             }
         </style>
-        <div id="Agenda" class="td-schedule-area  pt-140 pb-110 bg-position"
+        <div id="Agenda" class="td-schedule-area  pb-110 bg-position"
             data-background="assets/img/schedule/schedule-4/bg.jpg">
             <div class="container">
                 <div class="row justify-content-center">
@@ -816,7 +880,7 @@
         <!-- td-schedule-area-end -->
 
         <!-- td-team-area-start -->
-        <div class="td-team-area pt-140 pb-120 fix p-relative" id="Speakers">
+        <div class="td-team-area  pb-120 fix p-relative" id="Speakers">
             <h2 class="td-team-3-bigtitle td-team-bigtext">SPEAKERS</h2>
             <div class="container">
                 <div class="row justify-content-center">
@@ -1059,7 +1123,7 @@
 
 
         <!-- td-brands-area-start -->
-        <div class="td-brands-area td-brands-2-wrap pt-140 pb-115">
+        <div class="td-brands-area td-brands-2-wrap  pb-115">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-8">
