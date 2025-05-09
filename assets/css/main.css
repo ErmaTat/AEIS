@@ -3810,7 +3810,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .header-sticky .logo-2 {
-  display: block !important;
+  display: flex !important;
 }
 
 .header-sticky .logo-sticky-none {
