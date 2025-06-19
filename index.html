@@ -258,7 +258,7 @@
                     <div class="navigation-link collapse navbar-collapse gap-4" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">
 
-                            <li class="nav-item active">
+                            <li class="nav-item">
                                 <a class="nav-link fw-normal" href="index.html"><span>HOME</span></a>
                             </li>
                             <li class="nav-item ">
@@ -520,10 +520,12 @@
 
             .conf-benefits-grid {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                grid-template-columns: repeat(3, 1fr);
+                /* Exactly 3 columns */
                 gap: 30px;
                 margin-bottom: 50px;
             }
+
 
             .conf-benefit-card {
                 background: white;
@@ -621,10 +623,10 @@
 
 
                 <div class="conf-benefits-grid">
-                    <div class="conf-benefit-card" data-aos="fade-right">
-                       
-                            <img src="net.png" class="card-img-top img-fluid conf-imag" alt="laptop-mallet-table">
-                     
+                    <div class="conf-benefit-card" data-aos="fade-up">
+
+                        <img src="net.png" class="card-img-top img-fluid conf-imag" alt="laptop-mallet-table">
+
                         <div class="conf-benefit-content mt-4">
                             <h3 class="conf-benefit-title">Unparalleled Networking</h3>
                             <p class="conf-benefit-description">
@@ -635,21 +637,9 @@
                         </div>
                     </div>
 
-                    <div class="conf-benefit-card" data-aos="fade-up"> 
-                            <img src="images/02_home/local-service/american-flag-background-independence-day.png"
-                                class="card-img-top img-fluid conf-imag" alt="laptop-mallet-table">
-                       
-                        <div class="conf-benefit-content">
-                            <h3 class="conf-benefit-title">Cutting-Edge Insights</h3>
-                            <p class="conf-benefit-description">
-                                Learn from expert speakers about the latest trends, technologies, and regulations in the
-                                LPG industry.
-                            </p>
+                   
 
-                        </div>
-                    </div>
 
-                 
                 </div>
 
                 <div class="conf-cta-footer" data-aos="fade-up">
@@ -964,7 +954,7 @@
                 }
 
                 // Determine current section
-                const scrollPos = window.scrollY + 100; // offset
+                const scrollPos = window.scrollY + 200; // offset
                 let currentId = '';
 
                 sectionMap.forEach(({ section, id }) => {
