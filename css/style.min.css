@@ -1415,9 +1415,10 @@ header .home-three .top-header {
 }
 
 
-#navbarSupportedContent > ul > li.nav-item.active{
+/* #navbarSupportedContent > ul > li.nav-item.active{
     border-bottom: 3px solid #0da2da;
-}
+    transition: border-bottom 0.3s ease;
+} */
 
 .default .navbar-details .navigation-link .navbar-nav .nav-item .nav-link::after {
     border-bottom: 1px solid #0da2da;

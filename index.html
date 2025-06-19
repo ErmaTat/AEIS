@@ -46,6 +46,26 @@
             font-weight: 600 !important;
         }
 
+        #navbarSupportedContent>ul>li.nav-item {
+            position: relative;
+        }
+
+        #navbarSupportedContent>ul>li.nav-item::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 0;
+            background-color: #0da2da;
+            transition: width 0.4s ease-in-out;
+        }
+
+        #navbarSupportedContent>ul>li.nav-item.active::after {
+            width: 100%;
+        }
+
+
         footer {
             margin-top: 100px;
         }
@@ -133,10 +153,55 @@
             font-size: 0.8rem;
             font-style: italic;
         }
+
         /* footer, footer .term-and-condition,header .home-one .top-header .top-header-content{
             padding-top: 10px;
             background: #25272a;
         } */
+        .sticky-navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: white;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+
+        body>header>nav>div>a>img {
+            max-width: 200px !important;
+        }
+
+        body>header>nav>div>ul>li>a {
+            font-weight: 600 !important;
+            color: black !important;
+        }
+
+        .sticky-navbar .nav-item.active {
+            font-weight: bold;
+            /* border-bottom: 3px solid #0da2da !important; */
+            /* highlight color */
+        }
+
+        .sticky-navbar .nav-item {
+            position: relative;
+        }
+
+        .sticky-navbar .nav-item::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 0;
+            background-color: #0da2da;
+            transition: width 0.4s ease-in-out;
+        }
+
+        .sticky-navbar .nav-item.active::after {
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -194,26 +259,26 @@
                         <ul class="navbar-nav ms-auto">
 
                             <li class="nav-item active">
-                                <a class="nav-link fw-normal" href="contact.html"><span>HOME</span></a>
+                                <a class="nav-link fw-normal" href="index.html"><span>HOME</span></a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link fw-normal" href="contact.html"><span>ABOUT</span></a>
+                                <a class="nav-link fw-normal" href="index.html#About"><span>ABOUT</span></a>
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link fw-normal" href="contact.html"><span>AGENDA</span></a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link fw-normal" href="contact.html"><span>SPEAKERS</span></a>
+                                <a class="nav-link fw-normal" href="index.html#speakers"><span>SPEAKERS</span></a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link fw-normal" href="contact.html"><span>CONTACT</span></a>
+                                <a class="nav-link fw-normal" href="index.html#Contact"><span>CONTACT</span></a>
                             </li>
                         </ul>
                         <div
                             class="getStart-sideMenu d-flex align-items-center align-content-center justify-content-center justify-content-md-between gap-2 ">
                             <div class="d-flex align-items-center ms-sm-0 ms-lg-auto ms-xl-auto ms-xxl-auto cityWall-btn"
                                 role="search">
-                                <a href="contact.html">Register Now <i class="bi bi-arrow-right"></i></a>
+                                <a href="register.html">Register Now <i class="bi bi-arrow-right"></i></a>
                             </div>
                             <!-- <div class="said-navbar ms-2">
                                 <a href="#" class="navSidebar-button" onclick="openNav()">
@@ -268,6 +333,20 @@
                 </div>
             </nav>
         </div>
+        <nav class="navbar navbar-expand-lg sticky-navbar d-none">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="NLCGA Logo.png" class="img-fluid" alt="logo">
+                </a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active"><a class="nav-link " href="#About">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Agenda">AGENDA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Speakers">SPEAKERS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+
     </header>
     <!-- =====main section===== -->
     <main class="home-one">
@@ -292,66 +371,7 @@
             }
         </style>
         <!-- =====Banner Section===== -->
-        <!-- <div class="banner">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="images-optimization position-relative ">
-                            <img src="slide4.jpg" class="d-block img-fluid " alt="...">
-                            <div class="cover-images-overlay">
-                                <div class="container">
-                                    <div class="banner-content ">
-                                        <div class="sentence-underline">
-                                            <div class="text-white banner-semi-title">City Government Online Services
-                                            </div>
-                                        </div>
-                                        <h1 class="text-white my-3">
-                                            <span class="cssanimation lePopUp sequence">Good Governance is Part</span>
-                                            <br>
-                                            <span class="cssanimation lePopUp sequence">of The Democracy</span>
-                                        </h1>
-                                        <div class="buttons">
-                                            <div class="cityWall-btn" role="search">
-                                                <a href="contact.html">Register Now <i
-                                                        class="bi bi-arrow-right"></i></a>
-                                              
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="images-optimization position-relative ">
-                            <img src="slide4.jpg" class="d-block img-fluid" alt="...">
-                            <div class="cover-images-overlay">
-                                <div class="container">
-                                    <div class="banner-content ">
-                                        <div class="sentence-underline">
-                                            <div class="text-white banner-semi-title">City Government Online Services
-                                            </div>
-                                        </div>
-                                        <h1 class="text-white my-3">
-                                            <span class="cssanimation lePopUp sequence">Good Governance is Part</span>
-                                            <br>
-                                            <span class="cssanimation lePopUp sequence">of The Democracy</span>
-                                        </h1>
-                                        <div class="buttons">
-                                            <div class="cityWall-btn" role="search">
-                                                <a href="contact.html">Register Now <i
-                                                        class="bi bi-arrow-right"></i></a>
-                                               
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+
         <div class="banner">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -370,7 +390,7 @@
                                         </h1>
                                         <div class="buttons">
                                             <div class="cityWall-btn" role="search">
-                                                <a href="contact.html">Register Now <i
+                                                <a href="register.html">Register Now <i
                                                         class="bi bi-arrow-right"></i></a>
 
                                             </div>
@@ -387,7 +407,7 @@
         </div>
 
         <!-- ======About Company section======= -->
-        <section class="about-company">
+        <section class="about-company" id="About">
             <div class="container">
                 <div class="row align-items-center py-4">
 
@@ -439,7 +459,7 @@
                             </div>
 
                             <div class="company-videos d-flex align-items-center cityWall-btn-two">
-                                <a href="about.html">Register Now <i class="bi bi-arrow-right"></i></a>
+                                <a href="register.html">Register Now <i class="bi bi-arrow-right"></i></a>
                                 <div class="video-and-text">
                                     <div class="home-pages-video-popup d-flex align-content-center gap-3 ">
                                         <button onclick="videoPlayBtnOneFirst()" id="video-play-btn-one-first"
@@ -500,7 +520,7 @@
 
             .conf-benefits-grid {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
                 gap: 30px;
                 margin-bottom: 50px;
             }
@@ -579,6 +599,10 @@
                 margin-left: 15px;
                 transition: background 0.3s ease;
             }
+
+            .conf-imag {
+                height: 60%;
+            }
         </style>
         <section class="conf-why-attend-section">
             <div class="conf-container container">
@@ -598,11 +622,10 @@
 
                 <div class="conf-benefits-grid">
                     <div class="conf-benefit-card" data-aos="fade-right">
-                        <div class="">
-                            <img src="images/02_home/local-service/american-flag-background-independence-day.png"
-                                class="card-img-top img-fluid" alt="laptop-mallet-table">
-                        </div>
-                        <div class="conf-benefit-content">
+                       
+                            <img src="net.png" class="card-img-top img-fluid conf-imag" alt="laptop-mallet-table">
+                     
+                        <div class="conf-benefit-content mt-4">
                             <h3 class="conf-benefit-title">Unparalleled Networking</h3>
                             <p class="conf-benefit-description">
                                 Connect with industry leaders, potential partners, and peers from across the global LPG
@@ -612,11 +635,10 @@
                         </div>
                     </div>
 
-                    <div class="conf-benefit-card" data-aos="fade-up">
-                        <div class="">
+                    <div class="conf-benefit-card" data-aos="fade-up"> 
                             <img src="images/02_home/local-service/american-flag-background-independence-day.png"
-                                class="card-img-top img-fluid" alt="laptop-mallet-table">
-                        </div>
+                                class="card-img-top img-fluid conf-imag" alt="laptop-mallet-table">
+                       
                         <div class="conf-benefit-content">
                             <h3 class="conf-benefit-title">Cutting-Edge Insights</h3>
                             <p class="conf-benefit-description">
@@ -627,25 +649,12 @@
                         </div>
                     </div>
 
-                    <div class="conf-benefit-card" data-aos="fade-left">
-                        <div>
-                            <img src="images/02_home/local-service/american-flag-background-independence-day.png"
-                                class="card-img-top img-fluid" alt="laptop-mallet-table">
-                        </div>
-                        <div class="conf-benefit-content">
-                            <h3 class="conf-benefit-title">Innovation Showcase</h3>
-                            <p class="conf-benefit-description">
-                                Experience firsthand the newest products and solutions from leading companies in the
-                                exhibition hall.
-                            </p>
-
-                        </div>
-                    </div>
+                 
                 </div>
 
                 <div class="conf-cta-footer" data-aos="fade-up">
                     <div class="cityWall-btn" role="search">
-                        <a href="contact.html">Register Now <i class="bi bi-arrow-right"></i></a>
+                        <a href="register.html">Register Now <i class="bi bi-arrow-right"></i></a>
 
                     </div>
                 </div>
@@ -655,7 +664,7 @@
 
 
         <!-- ======Our Dedicated Investigators======= -->
-        <section class="our-investigators ">
+        <section class="our-investigators " id="Speakers">
             <div class="container">
                 <div class="section-title">
                     <div class="semi-title" data-aos="fade-up">
@@ -804,7 +813,14 @@
 
     </main>
     <!-- =====Footer section===== -->
-    <footer>
+    <footer id="Contact" style="padding-top: 0px;">
+        <div class=" mb-4">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d[LATITUDE]!2d[LONGITUDE]!3d[ZOOM]!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z[LATITUDE]x[LONGITUDE]!5e0!3m2!1sen!2sus!4v[TIMESTAMP]"
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
         <div class="container">
 
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 g-4 our-details">
@@ -873,6 +889,7 @@
 
             </div>
         </div>
+
         <div class="term-and-condition">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center copy-right-content ">
@@ -925,6 +942,64 @@
 
     </script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const stickyNav = document.querySelector('.sticky-navbar');
+            const mainNav = document.querySelector('.home-one');
+            const navItems = document.querySelectorAll('.sticky-navbar .nav-item');
+
+            // Map nav-items to their href-linked sections
+            const sectionMap = Array.from(navItems).map(item => {
+                const link = item.querySelector('a.nav-link');
+                const sectionId = link?.getAttribute('href')?.replace('#', '');
+                const section = document.getElementById(sectionId);
+                return section ? { item, section, id: sectionId } : null;
+            }).filter(Boolean);
+
+            function handleScroll() {
+                // Toggle sticky navbar visibility
+                if (mainNav && stickyNav) {
+                    const mainNavBottom = mainNav.getBoundingClientRect().bottom;
+                    stickyNav.classList.toggle('d-none', mainNavBottom > 0);
+                }
+
+                // Determine current section
+                const scrollPos = window.scrollY + 100; // offset
+                let currentId = '';
+
+                sectionMap.forEach(({ section, id }) => {
+                    const top = section.offsetTop;
+                    const bottom = top + section.offsetHeight;
+                    if (scrollPos >= top && scrollPos < bottom) {
+                        currentId = id;
+                    }
+                });
+
+                // Update active class on nav-items
+                sectionMap.forEach(({ item, id }) => {
+                    item.classList.toggle('active', id === currentId);
+                });
+            }
+
+            window.addEventListener('scroll', handleScroll);
+            handleScroll(); // initial run
+
+            // Optional: smooth scroll on click
+            navItems.forEach(({ children }) => {
+                const link = children[0];
+                if (link?.tagName === 'A') {
+                    link.addEventListener('click', e => {
+                        const targetId = link.getAttribute('href');
+                        const target = document.querySelector(targetId);
+                        if (target) {
+                            e.preventDefault();
+                            window.scrollTo({ top: target.offsetTop, behavior: 'smooth' });
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 
 </body>
 
