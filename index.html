@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>NLCGA Summit 2025</title>
     <!-- fav icon link -->
     <link rel="shortcut icon" href="logosingle.png" type="image/x-icon">
@@ -38,6 +39,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <style>
+        
         section {
             margin-top: 100px;
         }
@@ -202,7 +204,17 @@
         .sticky-navbar .nav-item.active::after {
             width: 100%;
         }
+
+        @media (max-width: 991.98px) {
+            .sticky-navbar {
+                display: none !important;
+            }
+            #About > div > div > div.col-12.col-md-12.col-lg-5.col-xl-5.aos-init.aos-animate > div > img.img-fluid.img-tow.left-slider{
+                display: none !important;
+            }
+        }
     </style>
+    
 </head>
 
 <body>
@@ -280,54 +292,7 @@
                                 role="search">
                                 <a href="register.html">Register Now <i class="bi bi-arrow-right"></i></a>
                             </div>
-                            <!-- <div class="said-navbar ms-2">
-                                <a href="#" class="navSidebar-button" onclick="openNav()">
-                                    <i class="bi bi-grid-3x3-gap-fill"></i>
-                                </a>
-                                <div id="mySidenav" class="sidenav">
-                                    <div class="side-logo-button">
-                                        <a href="index.html">
-                                            <img src="images/multiple-use/side-navmenu/side-logo.png" class="img-fluid"
-                                                alt="">
-                                        </a>
-                                        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-                                    </div>
-                                    <div class="our-mission ">
-                                        <h4 class="text-white">Our mission</h4>
-                                        <p>Our mission is to connect people to the heart and soul of cities around the
-                                            world. From buildings to cobblestone streets, each has its own story,
-                                            dedicated
-                                            to sharing those stories with you..</p>
-                                    </div>
-                                    <div class="contact">
-                                        <div class="con-info">
-                                            <h4 class="text-white ">Contact Info</h4>
-                                            <ul>
-                                                <li><a href="#"><i class="bi bi-geo-alt"></i> Valentin, Street Road 24,
-                                                        New
-                                                        York,
-                                                        USA - 67452</a></li>
-                                                <li> <a href="tel:+1999806915">
-                                                        <i class="bi bi-telephone phone"></i>
-                                                        +199(980) 6915
-                                                    </a></li>
-                                                <li><a href="mailto:shifamoni@gmail.com">
-                                                        <i class="bi bi-envelope email"></i>
-                                                        shifamoni@gmail.com
-                                                    </a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="social-link">
-                                            <ul>
-                                                <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
-                                                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                                                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                                                <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
+
                         </div>
                     </div>
                 </div>
@@ -518,13 +483,7 @@
                 display: inline-block;
             }
 
-            .conf-benefits-grid {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                /* Exactly 3 columns */
-                gap: 30px;
-                margin-bottom: 50px;
-            }
+         
 
 
             .conf-benefit-card {
@@ -607,7 +566,8 @@
             }
         </style>
         <section class="conf-why-attend-section">
-            <div class="conf-container container">
+            <!-- Remove 'container' class from this div -->
+            <div class="conf-container"> 
                 <div class="section-title">
                     <div class="semi-title" data-aos="fade-up">
                         <div class="animated-circles justify-content-center">
@@ -620,32 +580,26 @@
                         <h2 class="">Discover the Value of Attending</h2>
                     </div>
                 </div>
-
-
-                <div class="conf-benefits-grid">
-                    <div class="conf-benefit-card" data-aos="fade-up">
-
-                        <img src="net.png" class="card-img-top img-fluid conf-imag" alt="laptop-mallet-table">
-
-                        <div class="conf-benefit-content mt-4">
-                            <h3 class="conf-benefit-title">Unparalleled Networking</h3>
-                            <p class="conf-benefit-description">
-                                Connect with industry leaders, potential partners, and peers from across the global LPG
-                                sector.
-                            </p>
-
+        
+                <!-- Add row here to maintain Bootstrap structure -->
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-4" data-aos="fade-up">
+                        <div class="conf-benefit-card">
+                            <img src="net.png" class="card-img-top img-fluid conf-imag" alt="laptop-mallet-table">
+                            <div class="conf-benefit-content mt-4">
+                                <h3 class="conf-benefit-title">Unparalleled Networking</h3>
+                                <p class="conf-benefit-description">
+                                    Connect with industry leaders, potential partners, and peers from across the global LPG
+                                    sector.
+                                </p>
+                            </div>
                         </div>
                     </div>
-
-                   
-
-
                 </div>
-
+        
                 <div class="conf-cta-footer" data-aos="fade-up">
                     <div class="cityWall-btn" role="search">
                         <a href="register.html">Register Now <i class="bi bi-arrow-right"></i></a>
-
                     </div>
                 </div>
             </div>
