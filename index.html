@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLCGA Summit 2025</title>
+    <!-- fav icon link -->
+    <link rel="shortcut icon" href="logosingle.png" type="image/x-icon">
+    <!-- font awesome-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Link slick slider CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- letter animation -->
+    <link rel="stylesheet" href="css/cssanimation.min.css">
+    <!-- lordicon icons animation -->
+    <script src="lordicon.js"></script>
+    <!-- AOS animation -->
+    <link href="aos%402.3.1/dist/aos.css" rel="stylesheet">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="npm/bootstrap-icons%401.11.3/font/bootstrap-icons.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- css link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <style>
+        section {
+            margin-top: 100px;
+        }
+
+        #navbarSupportedContent>ul>li>a>span {
+            font-weight: 600 !important;
+        }
+
+        footer {
+            margin-top: 100px;
+        }
+    </style>
+    <style>
+        .conf-speaker-card {
+            background: #fff;
+            border-radius: 2px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .conf-speaker-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .conf-speaker-image-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .conf-speaker-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .conf-speaker-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .conf-speaker-image-container:hover .conf-speaker-overlay {
+            transform: translateY(0);
+        }
+
+        .conf-speaker-social a {
+            color: white;
+            margin-right: 15px;
+            font-size: 18px;
+        }
+
+        .conf-speaker-share {
+            background: transparent;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .conf-speaker-info {
+            padding: 20px;
+            background: #2a2e35;
+            color: white;
+        }
+
+        .conf-speaker-name {
+            margin: 0 0 5px 0;
+            font-size: 1.25rem;
+        }
+
+        .conf-speaker-name a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .conf-speaker-title {
+            color: #ccc;
+            margin: 0 0 5px 0;
+            font-size: 0.9rem;
+        }
+
+        .conf-speaker-org {
+            color: #aaa;
+            font-size: 0.8rem;
+            font-style: italic;
+        }
+        /* footer, footer .term-and-condition,header .home-one .top-header .top-header-content{
+            padding-top: 10px;
+            background: #25272a;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- =====header section===== -->
+    <header>
+        <div class="home-one">
+            <div class="top-header">
+                <div class="top-header-content">
+                    <div class="container">
+                        <div class="contact-top-information d-flex">
+                            <div class="mobile-number-email d-flex">
+                                <a href="tel:+1999806915">
+                                    <i class="bi bi-telephone phone"></i>
+                                    +44 203 172 0839
+                                </a>
+                                <a href="mailto:shifamoni@gmail.com">
+                                    <i class="bi bi-envelope email"></i>
+                                    info@brevityanderson.com
+                                </a>
+                            </div>
+                            <div class="language-socialLink d-flex ms-auto">
+                                <div class="language">
+                                    <label for="language" class="text-white">Language:</label>
+                                    <select id="language">
+                                        <option value="english">English</option>
+
+                                    </select>
+                                </div>
+                                <div class="socialLink d-flex">
+                                    <p class="d-inline-block text-white">Follow on:</p>
+                                    <ul class="d-flex">
+                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar-details navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="brand-logo">
+                        <a class="navbar-brand" href="index.html"><img src="NLCGA Logo.png" class="img-fluid"
+                                alt="logo"></a>
+                    </div>
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navigation-link collapse navbar-collapse gap-4" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto">
+
+                            <li class="nav-item active">
+                                <a class="nav-link fw-normal" href="contact.html"><span>HOME</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link fw-normal" href="contact.html"><span>ABOUT</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link fw-normal" href="contact.html"><span>AGENDA</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link fw-normal" href="contact.html"><span>SPEAKERS</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link fw-normal" href="contact.html"><span>CONTACT</span></a>
+                            </li>
+                        </ul>
+                        <div
+                            class="getStart-sideMenu d-flex align-items-center align-content-center justify-content-center justify-content-md-between gap-2 ">
+                            <div class="d-flex align-items-center ms-sm-0 ms-lg-auto ms-xl-auto ms-xxl-auto cityWall-btn"
+                                role="search">
+                                <a href="contact.html">Register Now <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                            <!-- <div class="said-navbar ms-2">
+                                <a href="#" class="navSidebar-button" onclick="openNav()">
+                                    <i class="bi bi-grid-3x3-gap-fill"></i>
+                                </a>
+                                <div id="mySidenav" class="sidenav">
+                                    <div class="side-logo-button">
+                                        <a href="index.html">
+                                            <img src="images/multiple-use/side-navmenu/side-logo.png" class="img-fluid"
+                                                alt="">
+                                        </a>
+                                        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                                    </div>
+                                    <div class="our-mission ">
+                                        <h4 class="text-white">Our mission</h4>
+                                        <p>Our mission is to connect people to the heart and soul of cities around the
+                                            world. From buildings to cobblestone streets, each has its own story,
+                                            dedicated
+                                            to sharing those stories with you..</p>
+                                    </div>
+                                    <div class="contact">
+                                        <div class="con-info">
+                                            <h4 class="text-white ">Contact Info</h4>
+                                            <ul>
+                                                <li><a href="#"><i class="bi bi-geo-alt"></i> Valentin, Street Road 24,
+                                                        New
+                                                        York,
+                                                        USA - 67452</a></li>
+                                                <li> <a href="tel:+1999806915">
+                                                        <i class="bi bi-telephone phone"></i>
+                                                        +199(980) 6915
+                                                    </a></li>
+                                                <li><a href="mailto:shifamoni@gmail.com">
+                                                        <i class="bi bi-envelope email"></i>
+                                                        shifamoni@gmail.com
+                                                    </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="social-link">
+                                            <ul>
+                                                <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                                                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                                                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                                <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- =====main section===== -->
+    <main class="home-one">
+        <style>
+            .banner-subtitle .subtitle-type {
+                font-size: 1.2rem;
+                font-weight: 600;
+                letter-spacing: 0.5px !important;
+                color: #0da2da;
+            }
+
+            .date-type {
+                font-size: 1.2rem;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+
+            .banner-title .main-type-effect {
+                font-size: 2.5rem;
+                font-weight: 700;
+                display: inline-block;
+            }
+        </style>
+        <!-- =====Banner Section===== -->
+        <!-- <div class="banner">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="images-optimization position-relative ">
+                            <img src="slide4.jpg" class="d-block img-fluid " alt="...">
+                            <div class="cover-images-overlay">
+                                <div class="container">
+                                    <div class="banner-content ">
+                                        <div class="sentence-underline">
+                                            <div class="text-white banner-semi-title">City Government Online Services
+                                            </div>
+                                        </div>
+                                        <h1 class="text-white my-3">
+                                            <span class="cssanimation lePopUp sequence">Good Governance is Part</span>
+                                            <br>
+                                            <span class="cssanimation lePopUp sequence">of The Democracy</span>
+                                        </h1>
+                                        <div class="buttons">
+                                            <div class="cityWall-btn" role="search">
+                                                <a href="contact.html">Register Now <i
+                                                        class="bi bi-arrow-right"></i></a>
+                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="images-optimization position-relative ">
+                            <img src="slide4.jpg" class="d-block img-fluid" alt="...">
+                            <div class="cover-images-overlay">
+                                <div class="container">
+                                    <div class="banner-content ">
+                                        <div class="sentence-underline">
+                                            <div class="text-white banner-semi-title">City Government Online Services
+                                            </div>
+                                        </div>
+                                        <h1 class="text-white my-3">
+                                            <span class="cssanimation lePopUp sequence">Good Governance is Part</span>
+                                            <br>
+                                            <span class="cssanimation lePopUp sequence">of The Democracy</span>
+                                        </h1>
+                                        <div class="buttons">
+                                            <div class="cityWall-btn" role="search">
+                                                <a href="contact.html">Register Now <i
+                                                        class="bi bi-arrow-right"></i></a>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="banner">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="images-optimization position-relative">
+                            <img src="slide4.jpg" class="d-block img-fluid" alt="NLCGA Conference Slide">
+                            <div class="cover-images-overlay">
+                                <div class="container">
+                                    <div class="banner-content">
+                                        <div class="banner-subtitle text-white">
+                                            <span class="subtitle-type">15th Annual Gathering</span>
+                                        </div>
+                                        <h1 class="banner-title text-white my-2">
+                                            <span class="main-type-effect">NLCGA Conference & Exhibition</span><br>
+                                            <span class="date-type">October 15–16, 2025</span>
+                                        </h1>
+                                        <div class="buttons">
+                                            <div class="cityWall-btn" role="search">
+                                                <a href="contact.html">Register Now <i
+                                                        class="bi bi-arrow-right"></i></a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- You can duplicate for additional slides -->
+                </div>
+            </div>
+        </div>
+
+        <!-- ======About Company section======= -->
+        <section class="about-company">
+            <div class="container">
+                <div class="row align-items-center py-4">
+
+                    <div class="col-12 col-md-12 col-lg-5 col-xl-5" data-aos="fade-up">
+                        <div class="images">
+                            <img class="img-fluid img-one" src="about1.png" alt="">
+                            <img class="img-fluid img-tow left-slider" src="about2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="remove-div one-first col-12 col-md-12 col-lg-7 col-xl-7" data-aos="fade-up">
+                        <div class="company-details">
+
+
+                            <div class="semi-title">
+                                <div class="animated-circles">
+                                    <div class="small-circle-start"></div>
+                                    <span class="title">About the Conference</span>
+                                </div>
+                            </div>
+                            <h2>
+                                <span class="about-type1">15th Annual NLCGA Conference</span>
+                                <br>
+                                <span class="about-type2">& LPG Industry Exhibition.</span>
+                            </h2>
+
+                            <p>
+                                The NLCGA Conference & Exhibition brings together key stakeholders, policymakers,
+                                investors, and experts in Nigeria’s LPG sector to discuss progress, challenges, and
+                                opportunities within the industry. This landmark 15th edition aims to foster innovation,
+                                encourage collaboration, and promote sustainable energy solutions across the nation.
+
+                            </p>
+
+                            <div class="company-list row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2">
+                                <div class="col">
+                                    <ul class="gap-3">
+                                        <li><span class="square"></span> <span>Industry Networking Sessions</span></li>
+                                        <li><span class="square"></span> <span>Policy & Regulatory Panels</span></li>
+                                        <li><span class="square"></span> <span>Exhibition of LPG Solutions</span></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul class="gap-3">
+                                        <li><span class="square"></span> <span>Technical Presentations</span></li>
+                                        <li><span class="square"></span> <span>Workshops & Masterclasses</span></li>
+                                        <li><span class="square"></span> <span>Investment Opportunities</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="company-videos d-flex align-items-center cityWall-btn-two">
+                                <a href="about.html">Register Now <i class="bi bi-arrow-right"></i></a>
+                                <div class="video-and-text">
+                                    <div class="home-pages-video-popup d-flex align-content-center gap-3 ">
+                                        <button onclick="videoPlayBtnOneFirst()" id="video-play-btn-one-first"
+                                            class="video-play-btn"><i class="bi bi-play"></i></button>
+                                        <div class="video-modal-wrapper one-first">
+                                            <div class="video-modal-content">
+                                                <span onclick="videoCloseBtnOneFirst()"
+                                                    class="video-close-btn one-first">&times;</span>
+                                                <video class="web-video one-first" controls="">
+                                                    <source src="videos/cityWall.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                        </div>
+                                        <p class="m-0 ">Video Intro <br>
+                                            About NLCGA Conference</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+            .conf-why-attend-section {
+                /* background: #f8f9fa; */
+                padding: 80px 0;
+            }
+
+            .conf-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+
+            .conf-section-header {
+                text-align: center;
+                margin-bottom: 60px;
+            }
+
+            .conf-decoration {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 15px;
+            }
+
+
+            .conf-section-title h2 {
+                font-size: 2.5rem;
+                color: #2a2e35;
+                margin: 0;
+            }
+
+            .conf-title-line {
+                display: inline-block;
+            }
+
+            .conf-benefits-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 30px;
+                margin-bottom: 50px;
+            }
+
+            .conf-benefit-card {
+                background: white;
+                border-radius: 2px;
+                overflow: hidden;
+                /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); */
+                /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+                padding: 20px;
+                border-bottom: 2px solid #0da2da;
+            }
+
+
+
+            .conf-benefit-icon {
+                margin-bottom: 20px;
+            }
+
+            .conf-benefit-icon img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .conf-benefit-title {
+                color: #2a2e35;
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+            }
+
+            .conf-benefit-description {
+                color: #6c757d;
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+
+            .conf-benefit-cta {
+                margin-top: 20px;
+            }
+
+            .conf-cta-link {
+                /* color: #e63946; */
+                font-weight: 600;
+                text-decoration: none;
+                display: inline-flex;
+                align-items: center;
+            }
+
+            .conf-cta-link i {
+                margin-left: 5px;
+                transition: transform 0.3s ease;
+            }
+
+            .conf-cta-link:hover i {
+                transform: translate(3px, -3px);
+            }
+
+            .conf-cta-footer {
+                text-align: center;
+                margin-top: 40px;
+            }
+
+            .conf-cta-text {
+                font-size: 1.2rem;
+                color: #2a2e35;
+            }
+
+            .conf-cta-button {
+                color: white;
+                /* background: #e63946; */
+                padding: 12px 25px;
+                border-radius: 4px;
+                text-decoration: none;
+                font-weight: 600;
+                margin-left: 15px;
+                transition: background 0.3s ease;
+            }
+        </style>
+        <section class="conf-why-attend-section">
+            <div class="conf-container container">
+                <div class="section-title">
+                    <div class="semi-title" data-aos="fade-up">
+                        <div class="animated-circles justify-content-center">
+                            <div class="small-circle-start"></div>
+                            <div class="title">Why Attend</div>
+                            <div class="small-circle-end"></div>
+                        </div>
+                    </div>
+                    <div class="title text-center mb-5" data-aos="fade-up">
+                        <h2 class="">Discover the Value of Attending</h2>
+                    </div>
+                </div>
+
+
+                <div class="conf-benefits-grid">
+                    <div class="conf-benefit-card" data-aos="fade-right">
+                        <div class="">
+                            <img src="images/02_home/local-service/american-flag-background-independence-day.png"
+                                class="card-img-top img-fluid" alt="laptop-mallet-table">
+                        </div>
+                        <div class="conf-benefit-content">
+                            <h3 class="conf-benefit-title">Unparalleled Networking</h3>
+                            <p class="conf-benefit-description">
+                                Connect with industry leaders, potential partners, and peers from across the global LPG
+                                sector.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="conf-benefit-card" data-aos="fade-up">
+                        <div class="">
+                            <img src="images/02_home/local-service/american-flag-background-independence-day.png"
+                                class="card-img-top img-fluid" alt="laptop-mallet-table">
+                        </div>
+                        <div class="conf-benefit-content">
+                            <h3 class="conf-benefit-title">Cutting-Edge Insights</h3>
+                            <p class="conf-benefit-description">
+                                Learn from expert speakers about the latest trends, technologies, and regulations in the
+                                LPG industry.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="conf-benefit-card" data-aos="fade-left">
+                        <div>
+                            <img src="images/02_home/local-service/american-flag-background-independence-day.png"
+                                class="card-img-top img-fluid" alt="laptop-mallet-table">
+                        </div>
+                        <div class="conf-benefit-content">
+                            <h3 class="conf-benefit-title">Innovation Showcase</h3>
+                            <p class="conf-benefit-description">
+                                Experience firsthand the newest products and solutions from leading companies in the
+                                exhibition hall.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conf-cta-footer" data-aos="fade-up">
+                    <div class="cityWall-btn" role="search">
+                        <a href="contact.html">Register Now <i class="bi bi-arrow-right"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- ======Our Dedicated Investigators======= -->
+        <section class="our-investigators ">
+            <div class="container">
+                <div class="section-title">
+                    <div class="semi-title" data-aos="fade-up">
+                        <div class="animated-circles justify-content-center">
+                            <div class="small-circle-start"></div>
+                            <div class="title">Speakers</div>
+                            <div class="small-circle-end"></div>
+                        </div>
+                    </div>
+                    <div class="title text-center mb-5" data-aos="fade-up">
+                        <h2 class="">NLCGA 2025 Conference Speakers</h2>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+
+                    <div class="conf-speaker-col col" data-aos="fade-up">
+                        <div class="conf-speaker-card">
+                            <div class="conf-speaker-image-container">
+                                <img src="images/multiple-use/investigator/brawn.png" class="conf-speaker-img"
+                                    alt="Speaker Brawn Jack">
+                            </div>
+                            <div class="conf-speaker-info">
+                                <h3 class="conf-speaker-name">
+                                    <a href="team-details.html">Brawn Jack</a>
+                                </h3>
+                                <p class="conf-speaker-title">Head Officer</p>
+                                <div class="conf-speaker-org">National LPG Conference</div>
+                                <!-- Optional organization -->
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =====Sponsor Company Logo===== -->
+        <section class="company-brand-logo">
+            <div class="divide-row" data-aos="fade-up"></div>
+            <div class="container">
+                <div class="section-title">
+                    <div class="semi-title" data-aos="fade-up">
+                        <div class="animated-circles justify-content-center">
+                            <div class="small-circle-start"></div>
+                            <div class="title">Sponsors</div>
+                            <div class="small-circle-end"></div>
+                        </div>
+                    </div>
+                    <div class="title text-center mb-5" data-aos="fade-up">
+                        <h2 class="cssanimation lePopUp sequence">Our Sponsors</h2>
+                    </div>
+                </div>
+                <div class="slider">
+                    <style>
+                        .sponsor-name {
+                            font-size: 0.9rem;
+                            font-weight: 500;
+                            color: #333;
+                            text-transform: uppercase;
+                        }
+
+                        body>main>section.company-brand-logo>div.container>div.slider>div>div:nth-child(2)>a>img {
+                            height: 90%;
+                        }
+                    </style>
+                    <div class="slide-track">
+                        <div class="slide text-center">
+                            <a href="#">
+                                <img src="images/multiple-use/sponsors-company-logo/1.png" alt="Company A"
+                                    class="img-fluid">
+                                <div class="sponsor-name">Company A</div>
+                            </a>
+                        </div>
+                        <div class="slide text-center">
+                            <a href="#">
+                                <img src="images/multiple-use/sponsors-company-logo/2.png" alt="Company B"
+                                    class="img-fluid mb-2">
+                                <div class="sponsor-name">Company B</div>
+                            </a>
+                        </div>
+
+                        <!-- <div class="slide">
+                            <a href="#">
+                                <img src="images/multiple-use/sponsors-company-logo/3.png" alt="" class="img-fluid ">
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="#">
+                                <img src="images/multiple-use/sponsors-company-logo/4.png" alt="" class="img-fluid ">
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="#">
+                                <img src="images/multiple-use/sponsors-company-logo/5.png" alt="" class="img-fluid ">
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="#">
+                                <img src="images/multiple-use/sponsors-company-logo/6.png" alt="" class="img-fluid ">
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="#">
+                                <img src="images/multiple-use/sponsors-company-logo/7.png" alt="" class="img-fluid ">
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="#">
+                                <img src="images/multiple-use/sponsors-company-logo/3.png" alt="" class="img-fluid ">
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="#">
+                                <img src="images/multiple-use/sponsors-company-logo/2.png" alt="" class="img-fluid ">
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="#">
+                                <img src="images/multiple-use/sponsors-company-logo/4.png" alt="" class="img-fluid ">
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="#">
+                                <img src="images/multiple-use/sponsors-company-logo/5.png" alt="" class="img-fluid ">
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="#">
+                                <img src="images/multiple-use/sponsors-company-logo/7.png" alt="" class="img-fluid ">
+                            </a>
+                        </div>
+                        <div class="slide">
+                            <a href="#">
+                                <img src="images/multiple-use/sponsors-company-logo/6.png" alt="" class="img-fluid ">
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+    <!-- =====Footer section===== -->
+    <footer>
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 g-4 our-details">
+                <div class="col">
+                    <div class="card h-100 bg-transparent border-0  ">
+                        <a href="index.html"><img src="NLCGA Logo.png" class="card-img-top img-fluid " alt="..."></a>
+                        <div class="card-body px-0 py-3 ">
+                            <p class="card-text text-white ">For the past 14 years, the NLCGA Conference has been
+                                Nigeria’s premier platform for gas industry leaders, uniting experts to share insights,
+                                forge partnerships, and drive the sector forward.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 bg-transparent border-0">
+                        <div class="industry-info">
+                            <div class="position-relative">
+                                <div class="divide-column position-absolute "></div>
+                                <h4 class="ms-3 text-white ">Navigation</h4>
+                            </div>
+                            <ul class="d-flex flex-column  mt-3 row-gap-2  ms-3  ">
+                                <li><a class="text-white " href="#">Home</a></li>
+                                <li><a class="text-white " href="#">About</a></li>
+                                <li><a class="text-white " href="#">Speakers</a></li>
+                                <li><a class="text-white " href="#">Sponsors</a></li>
+                                <li><a class="text-white " href="#">Contact</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 bg-transparent border-0">
+                        <div class="touch-info">
+                            <div class="position-relative">
+                                <div class="divide-column position-absolute "></div>
+                                <h4 class="ms-3 text-white ">Get In Touch</h4>
+                            </div>
+                            <ul class="d-flex flex-column  mt-3 row-gap-2  ms-3  ">
+                                <li class="text-white mb-2">15 Stratton Street, W1J 8LQ United Kingdom</li>
+                                <li>
+                                    <a class="text-white" href="tel:+442031720839">
+                                        <i class="bi bi-telephone phone"></i>
+                                        +44 203 172 0839
+                                    </a>
+                                </li>
+                                <li> <a class="text-white" href="mailto:shifamoni@gmail.com">
+                                        <i class="bi bi-envelope email"></i>
+                                        info@brevityanderson.com
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="d-flex mt-2 gap-3 ms-3  ">
+                                <li><a class="text-white " href="#"><i
+                                            class="link-icons fa-brands fa-facebook-f"></i></a></li>
+                                <li><a class="text-white " href="#"><i class="link-icons fa-brands fa-twitter"></i></a>
+                                </li>
+
+                                <li><a class="text-white " href="#"><i
+                                            class="link-icons fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="term-and-condition">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center copy-right-content ">
+                    <div class="text-white copy-right">Copyright © 2025 Brevity Anderson. All rights reserved.
+                    </div>
+                    <div class="button-div">
+                        <a href="#" class="up-to-down-btn to-top"><i class="bi bi-chevron-double-up"></i></a>
+                    </div>
+                    <div>
+                        <ul class="d-flex gap-3 ">
+                            <li><a class="text-white " href="#">Terms</a></li>
+                            <li><a class="text-white " href="#">Privacy</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery js -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- letter animation -->
+    <script src="js/plugins/letteranimation.min.js"></script>
+    <!-- AOS animation -->
+    <script src="aos%403.0.0-beta.6/dist/aos.js"></script>
+    <!-- font awesome -->
+    <script src="js/all.min.js"></script>
+    <!-- slick slider JS -->
+    <script src="js/plugins/slick.js"></script>
+    <script src="js/plugins/slick.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="js/app.js"></script>
+    <script>
+        new Typed(".main-type-effect", {
+            strings: [
+                "NLCGA Conference & Exhibition",
+                "Africa’s Premier LPG Gathering",
+                "15th Annual Industry Meet-up"
+            ],
+            typeSpeed: 50,
+            backSpeed: 50,
+            backDelay: 2000,
+            loop: true,
+            showCursor: true,
+            smartBackspace: false
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>
